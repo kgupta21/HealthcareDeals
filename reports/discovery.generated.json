@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T16:25:20.070Z",
+  "generatedAt": "2026-04-09T17:20:21.171Z",
   "candidates": [
     {
       "provider": "GMC Canada",
@@ -49,6 +49,125 @@
       "url": "https://www.nbc.ca/personal/mortgages/offers.html",
       "title": "Mortgage offer",
       "matchedPattern": "offer"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-physicians",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/offers-beyond-banking.html#medical",
+      "title": "$150 INDIVIDUAL BILLING CREDIT",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-dentists",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/offers-beyond-banking.html#dental",
+      "title": "15% OFF",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-healthcare-advantage",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/index.html",
+      "title": "Advice & Learning",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-students",
+      "url": "https://www.rbcroyalbank.com/rbcrewards/",
+      "title": "Avion Rewards",
+      "matchedPattern": "avion"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-physicians",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage-pro.html#business",
+      "title": "Explore Offers",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/index.html?topic=healthcare-home-buying",
+      "title": "home-buying articles",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-healthcare-advantage",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/offers-for-clinic-owners.html",
+      "title": "Learn More about Dr.Bill",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-healthcare-advantage",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/offers-beyond-banking.html",
+      "title": "Offers Beyond Banking",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-healthcare-advantage",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage-pro.html",
+      "title": "Personal and Business Banking",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-healthcare-advantage",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/index.html",
+      "title": "RBC Healthcare",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-students",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=top-6-savings-tips-for-med-students",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-students",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=make-your-line-of-credit-work-hard-for-you-throughout-your-medical-or-dental-career",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-students",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=is-pursuing-a-dental-residency-worth-it",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=four-questions-medical-residents-should-answer-before-buying-a-home",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=how-to-create-a-business-plan-for-your-medical-practice",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-healthcare-advantage",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/royal-credit-line/index.html",
+      "title": "Student and Resident Line of Credit",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-students",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=tax-credits-and-deductions-for-canadian-med-students-and-residents",
+      "title": "Tax Credits and Deductions for Canadian Med/Dental Students and Residents",
+      "matchedPattern": "healthcare-financial-solutions"
     },
     {
       "provider": "Scotiabank",

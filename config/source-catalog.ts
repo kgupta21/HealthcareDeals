@@ -156,7 +156,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     audience: 'Healthcare students and professionals',
     offerTypeHint: 'bundle',
     captureType: 'offer-page',
-    onboardingStatus: 'queued',
+    onboardingStatus: 'active-parser',
     verificationStatus: 'confirmed',
     official: true,
     notes: 'Confirmed official RBC Healthcare Advantage page with banking and borrowing benefits.'
@@ -172,7 +172,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     audience: 'Medical and dental students',
     offerTypeHint: 'rate',
     captureType: 'offer-page',
-    onboardingStatus: 'queued',
+    onboardingStatus: 'active-parser',
     verificationStatus: 'confirmed',
     official: true,
     notes: 'Confirmed official RBC page with student borrowing and banking offers.'
@@ -188,7 +188,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     audience: 'Medical and dental residents',
     offerTypeHint: 'rate',
     captureType: 'offer-page',
-    onboardingStatus: 'queued',
+    onboardingStatus: 'active-parser',
     verificationStatus: 'inferred',
     official: true,
     notes: 'URL follows RBC healthcare page naming and should be validated before parser activation.'
@@ -204,7 +204,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     audience: 'Physicians',
     offerTypeHint: 'bundle',
     captureType: 'offer-page',
-    onboardingStatus: 'queued',
+    onboardingStatus: 'active-parser',
     verificationStatus: 'confirmed',
     official: true,
     notes: 'Confirmed official RBC physician page with current limited-time financing and Avion offer details.'
@@ -220,7 +220,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     audience: 'Dentists',
     offerTypeHint: 'bundle',
     captureType: 'offer-page',
-    onboardingStatus: 'queued',
+    onboardingStatus: 'active-parser',
     verificationStatus: 'confirmed',
     official: true,
     notes: 'Confirmed official RBC dentist page with current limited-time financing and Avion offer details.'

@@ -266,6 +266,292 @@ export const sourceDefinitions: SourceDefinition[] = [
     priority: 8
   },
   {
+    id: 'rbc-healthcare-advantage',
+    provider: 'RBC',
+    category: 'banking',
+    seedUrl: 'https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage.html',
+    country: 'CA',
+    extractorType: 'pattern-summary',
+    allowedDomains: ['www.rbcroyalbank.com', 'rbcroyalbank.com'],
+    discoveryPatterns: [
+      'healthcare-financial-solutions',
+      'healthcare-advantage',
+      'physicians',
+      'dentists',
+      'students',
+      'residents',
+      'investease',
+      'dr.bill'
+    ],
+    professionTargets: ['medical students', 'medical residents', 'physicians', 'dentists'],
+    enabled: true,
+    title: 'RBC Healthcare Advantage',
+    subcategory: 'banking bundle',
+    audience: 'all-healthcare-pros',
+    regionScope: 'Canada',
+    offerType: 'bundle',
+    professionTags: ['medical students', 'medical residents', 'physicians', 'dentists'],
+    valueRules: [
+      {
+        label: 'RBC Healthcare Advantage keeps the preferred borrowing rate at Prime minus 0.25%',
+        pattern: 'Prime minus 0\\.25%|Prime - 0\\.25%',
+        required: true
+      },
+      {
+        label: 'RBC Healthcare Advantage advertises up to $480+ in banking savings',
+        pattern: 'Save \\$480\\+ on Your Banking|Save \\$360 Annually on Your Banking',
+        required: true
+      },
+      {
+        label: 'Eligible RBC credit cards get an annual fee rebate worth up to $120 per year',
+        pattern: 'Save \\$120 annually on a Premium Credit Card|annual fee rebate|\\$120 rebate'
+      },
+      {
+        label: 'RBC InvestEase clients pay no management fee for 6 months',
+        pattern: 'Pay No Management Fee for 6 Months|RBC InvestEase'
+      },
+      {
+        label: 'Healthcare Advantage includes the Dr.Bill billing credit offer',
+        pattern: 'Dr\\.Bill|\\$150 billing credit'
+      }
+    ],
+    eligibilityRules: [
+      {
+        label: 'Offer is positioned for medical and dental professionals in Canada',
+        pattern: 'medical and dental professionals|RBC Healthcare Advantage',
+        required: true
+      }
+    ],
+    dateRules: [],
+    termsLinkPatterns: ['terms', 'conditions', 'legal', 'disclaimer'],
+    priority: 10
+  },
+  {
+    id: 'rbc-medical-dental-students',
+    provider: 'RBC',
+    category: 'lending',
+    seedUrl: 'https://www.rbcroyalbank.com/healthcare-financial-solutions/medical-dental-students.html',
+    country: 'CA',
+    extractorType: 'pattern-summary',
+    allowedDomains: ['www.rbcroyalbank.com', 'rbcroyalbank.com'],
+    discoveryPatterns: [
+      'healthcare-financial-solutions',
+      'medical-dental-students',
+      'royal-credit-line',
+      'healthcare-advantage',
+      'avion'
+    ],
+    professionTargets: ['medical students', 'dental students'],
+    enabled: true,
+    title: 'RBC medical and dental student offer',
+    subcategory: 'student line of credit',
+    audience: 'medical-students',
+    regionScope: 'Canada',
+    offerType: 'rate',
+    professionTags: ['medical students', 'dental students'],
+    valueRules: [
+      {
+        label: 'Medical and dental students can borrow up to $400,000 and access up to $100,000 in first year',
+        pattern: 'Borrow up to \\$400,000|access up to \\$100,000 in year one',
+        required: true
+      },
+      {
+        label: 'Student line of credit pricing is listed at RBC Prime minus 0.25%',
+        pattern: 'RBC Prime minus 0\\.25%|Prime minus 0\\.25%',
+        required: true
+      },
+      {
+        label: 'Students can earn 30,000 Avion points on approval',
+        pattern: 'Earn 30,000 Avion points upon approval|30,000 Avion points',
+        required: true
+      },
+      {
+        label: 'RBC VIP Banking waives the $30 monthly fee and the eligible credit-card annual fee',
+        pattern: '\\$360 annual savings|\\$120 annual savings|Monthly fee:\\s*\\$30 \\$0'
+      }
+    ],
+    eligibilityRules: [
+      {
+        label: 'Offer is designed for medical and dental students',
+        pattern: 'medical and dental students|medical student|dental student',
+        required: true
+      }
+    ],
+    dateRules: [],
+    termsLinkPatterns: ['terms', 'conditions', 'legal', 'disclaimer'],
+    priority: 10
+  },
+  {
+    id: 'rbc-medical-dental-residents',
+    provider: 'RBC',
+    category: 'lending',
+    seedUrl: 'https://www.rbcroyalbank.com/healthcare-financial-solutions/medical-dental-residents.html',
+    country: 'CA',
+    extractorType: 'pattern-summary',
+    allowedDomains: ['www.rbcroyalbank.com', 'rbcroyalbank.com'],
+    discoveryPatterns: [
+      'healthcare-financial-solutions',
+      'medical-dental-residents',
+      'royal-credit-line',
+      'healthcare-advantage',
+      'avion'
+    ],
+    professionTargets: ['medical residents', 'dental residents'],
+    enabled: true,
+    title: 'RBC medical and dental resident offer',
+    subcategory: 'resident line of credit',
+    audience: 'medical-residents',
+    regionScope: 'Canada',
+    offerType: 'rate',
+    professionTags: ['medical residents', 'dental residents'],
+    valueRules: [
+      {
+        label: 'Residents can borrow up to $425,000 and earn 30,000 Avion points',
+        pattern: 'Borrow Up to \\$425,000 \\+ Get 30,000 Avion Points|Borrow up to \\$425,000 \\+ Get 30,000 Avion Points',
+        required: true
+      },
+      {
+        label: 'Resident pricing is listed at Prime minus 0.25%',
+        pattern: 'Prime minus 0\\.25%|Prime - 0\\.25%',
+        required: true
+      },
+      {
+        label: 'Residents can save $480+ on their banking with RBC Healthcare Advantage',
+        pattern: 'Save \\$480\\+ on Your Banking|\\$360\\/Year in Savings|\\$120\\/Year in Savings'
+      }
+    ],
+    eligibilityRules: [
+      {
+        label: 'Offer is designed for medical and dental residents in Canada',
+        pattern: 'medical and dental residents|residency|residents',
+        required: true
+      }
+    ],
+    dateRules: [
+      {
+        field: 'expiresAt',
+        pattern: 'Offer end ([A-Za-z]+ \\d{1,2}, \\d{4})'
+      }
+    ],
+    termsLinkPatterns: ['terms', 'conditions', 'legal', 'disclaimer'],
+    priority: 10
+  },
+  {
+    id: 'rbc-physicians',
+    provider: 'RBC',
+    category: 'banking',
+    seedUrl: 'https://www.rbcroyalbank.com/healthcare-financial-solutions/practising-professionals/physicians.html',
+    country: 'CA',
+    extractorType: 'pattern-summary',
+    allowedDomains: ['www.rbcroyalbank.com', 'rbcroyalbank.com'],
+    discoveryPatterns: [
+      'healthcare-financial-solutions',
+      'practising-professionals',
+      'physicians',
+      'healthcare-advantage',
+      'avion'
+    ],
+    professionTargets: ['physicians'],
+    enabled: true,
+    title: 'RBC physician banking and borrowing offer',
+    subcategory: 'physician banking',
+    audience: 'physicians',
+    regionScope: 'Canada',
+    offerType: 'bundle',
+    professionTags: ['physicians'],
+    valueRules: [
+      {
+        label: 'Physicians can borrow up to $425,000 and earn 30,000 Avion points',
+        pattern: 'Borrow Up to \\$425,000 \\+ Get 30,000 Avion Points|Borrow up to \\$425,000 \\+ Get 30,000 Avion Points',
+        required: true
+      },
+      {
+        label: 'Physicians get preferred borrowing at Prime minus 0.25%',
+        pattern: 'Prime minus 0\\.25%|Prime - 0\\.25%',
+        required: true
+      },
+      {
+        label: 'RBC promotes bundle savings on personal and business banking for physicians',
+        pattern: 'Save up to \\$480\\+ on your banking|Save up to \\$700\\+ on your banking'
+      }
+    ],
+    eligibilityRules: [
+      {
+        label: 'Offer is presented on RBCs physician planning page',
+        pattern: 'Financial Planning for Physicians|physicians',
+        required: true
+      }
+    ],
+    dateRules: [
+      {
+        field: 'expiresAt',
+        pattern: 'Offer end ([A-Za-z]+ \\d{1,2}, \\d{4})'
+      }
+    ],
+    termsLinkPatterns: ['terms', 'conditions', 'legal', 'disclaimer'],
+    priority: 10
+  },
+  {
+    id: 'rbc-dentists',
+    provider: 'RBC',
+    category: 'banking',
+    seedUrl: 'https://www.rbcroyalbank.com/healthcare-financial-solutions/practising-professionals/dentists.html',
+    country: 'CA',
+    extractorType: 'pattern-summary',
+    allowedDomains: ['www.rbcroyalbank.com', 'rbcroyalbank.com'],
+    discoveryPatterns: [
+      'healthcare-financial-solutions',
+      'practising-professionals',
+      'dentists',
+      'healthcare-advantage',
+      'cleardent',
+      'adp'
+    ],
+    professionTargets: ['dentists'],
+    enabled: true,
+    title: 'RBC dentist banking and borrowing offer',
+    subcategory: 'dentist banking',
+    audience: 'dentists',
+    regionScope: 'Canada',
+    offerType: 'bundle',
+    professionTags: ['dentists', 'practice owners'],
+    valueRules: [
+      {
+        label: 'Dentists can borrow up to $425,000 and earn 30,000 Avion points',
+        pattern: 'Borrow Up to \\$425,000 \\+ Get 30,000 Avion Points|Borrow up to \\$425,000 \\+ Get 30,000 Avion Points',
+        required: true
+      },
+      {
+        label: 'Dentists get preferred borrowing at Prime minus 0.25%',
+        pattern: 'Prime minus 0\\.25%|Prime - 0\\.25%',
+        required: true
+      },
+      {
+        label: 'RBC promotes up to $480+ personal-banking savings or $700+ personal and business savings for dentists',
+        pattern: 'Save up to \\$480\\+ on your banking|Save up to \\$700\\+ on your banking'
+      },
+      {
+        label: 'Dentists also get non-banking partner discounts such as 15% off ClearDent or 30% off ADP',
+        pattern: '15% OFF|ClearDent|SAVE 30%|ADP'
+      }
+    ],
+    eligibilityRules: [
+      {
+        label: 'Offer is presented on RBCs dentist planning page',
+        pattern: 'Financial Planning for Dentists|dentists',
+        required: true
+      }
+    ],
+    dateRules: [
+      {
+        field: 'expiresAt',
+        pattern: 'Offer end ([A-Za-z]+ \\d{1,2}, \\d{4})'
+      }
+    ],
+    termsLinkPatterns: ['terms', 'conditions', 'legal', 'disclaimer'],
+    priority: 10
+  },
+  {
     id: 'lenovo-healthcare-discount',
     provider: 'Lenovo',
     category: 'tech',

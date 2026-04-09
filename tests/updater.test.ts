@@ -6,6 +6,14 @@ import { extractPromotion } from '../scripts/lib/updater';
 import { PromotionSchema } from '../src/lib/schema';
 
 const fixturesDir = resolve(process.cwd(), 'tests/fixtures');
+const getSourceById = (id: string) => {
+  const source = sourceDefinitions.find((candidate) => candidate.id === id);
+  if (!source) {
+    throw new Error(`Missing source definition: ${id}`);
+  }
+
+  return source;
+};
 
 describe('promotion transitions', () => {
   it('marks a prior promotion stale when a later check fails inside the grace period', async () => {
@@ -33,7 +41,7 @@ describe('promotion transitions', () => {
       fingerprint: 'abc'
     });
 
-    const source = sourceDefinitions[0];
+    const source = getSourceById('national-bank-healthcare-pros');
     const originalFetch = global.fetch;
     global.fetch = async () =>
       new Response('<html><body><h1>Missing everything</h1></body></html>', { status: 200 }) as Response;
@@ -70,7 +78,7 @@ describe('promotion transitions', () => {
       fingerprint: 'abc'
     });
 
-    const source = sourceDefinitions[0];
+    const source = getSourceById('national-bank-healthcare-pros');
     const originalFetch = global.fetch;
     global.fetch = async () =>
       new Response('<html><body><h1>Missing everything</h1></body></html>', { status: 200 }) as Response;
@@ -85,7 +93,7 @@ describe('promotion transitions', () => {
 describe('fixture-based extraction', () => {
   it('extracts the National Bank offer from fixture HTML', async () => {
     const html = await readFile(resolve(fixturesDir, 'national-bank.html'), 'utf8');
-    const source = sourceDefinitions[0];
+    const source = getSourceById('national-bank-healthcare-pros');
     const originalFetch = global.fetch;
     global.fetch = async () => new Response(html, { status: 200 }) as Response;
 
@@ -100,7 +108,7 @@ describe('fixture-based extraction', () => {
 
   it('extracts the Scotiabank physician offer from fixture HTML', async () => {
     const html = await readFile(resolve(fixturesDir, 'scotiabank-physicians.html'), 'utf8');
-    const source = sourceDefinitions[2];
+    const source = getSourceById('scotiabank-practising-physicians');
     const originalFetch = global.fetch;
     global.fetch = async () => new Response(html, { status: 200 }) as Response;
 
@@ -116,7 +124,7 @@ describe('fixture-based extraction', () => {
 
   it('extracts the Lenovo healthcare offer from fixture HTML', async () => {
     const html = await readFile(resolve(fixturesDir, 'lenovo.html'), 'utf8');
-    const source = sourceDefinitions[5];
+    const source = getSourceById('lenovo-healthcare-discount');
     const originalFetch = global.fetch;
     global.fetch = async () => new Response(html, { status: 200 }) as Response;
 
@@ -125,5 +133,20 @@ describe('fixture-based extraction', () => {
 
     expect(extracted.promotion?.category).toBe('tech');
     expect(extracted.promotion?.eligibilitySummary).toContain('medical professionals');
+  });
+
+  it('extracts the RBC student offer from fixture HTML', async () => {
+    const html = await readFile(resolve(fixturesDir, 'rbc-students.html'), 'utf8');
+    const source = getSourceById('rbc-medical-dental-students');
+    const originalFetch = global.fetch;
+    global.fetch = async () => new Response(html, { status: 200 }) as Response;
+
+    const extracted = await extractPromotion(source, undefined, new Date('2026-04-09T00:00:00.000Z'));
+    global.fetch = originalFetch;
+
+    expect(extracted.promotion?.provider).toBe('RBC');
+    expect(extracted.promotion?.valueSummary).toContain('borrow up to $400,000');
+    expect(extracted.promotion?.eligibilitySummary).toContain('medical and dental students');
+    expect(extracted.promotion?.status).toBe('active');
   });
 });

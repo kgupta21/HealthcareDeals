@@ -16,6 +16,7 @@ export const categoryLabels: Record<Promotion['category'], string> = {
 export const audienceLabels: Record<Promotion['audience'], string> = {
   'all-healthcare-pros': 'All healthcare professionals',
   physicians: 'Physicians',
+  dentists: 'Dentists',
   'medical-students': 'Medical students',
   'medical-residents': 'Medical residents',
   nurses: 'Nurses',

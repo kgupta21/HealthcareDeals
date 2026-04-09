@@ -27,6 +27,7 @@ export const OfferTypeSchema = z.enum([
 export const AudienceSchema = z.enum([
   'all-healthcare-pros',
   'physicians',
+  'dentists',
   'medical-students',
   'medical-residents',
   'nurses',

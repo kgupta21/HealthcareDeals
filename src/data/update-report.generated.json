@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-04-09T16:25:20.070Z",
-  "sourceCount": 7,
-  "sourceSuccessRate": 0.8571428571428571,
+  "generatedAt": "2026-04-09T17:20:21.171Z",
+  "sourceCount": 12,
+  "sourceSuccessRate": 0.9166666666666666,
   "okToPublish": true,
   "gateFailures": [],
-  "activeCount": 6,
+  "activeCount": 11,
   "staleCount": 0,
   "expiredCount": 0,
-  "publicCount": 6,
-  "newlyAddedIds": [],
+  "publicCount": 11,
+  "newlyAddedIds": [
+    "rbc-dentists",
+    "rbc-healthcare-advantage",
+    "rbc-medical-dental-residents",
+    "rbc-medical-dental-students",
+    "rbc-physicians"
+  ],
   "changedIds": [
     "gmc-canada-discount-programs",
     "lenovo-healthcare-discount",
     "national-bank-healthcare-pros",
+    "rbc-dentists",
+    "rbc-healthcare-advantage",
+    "rbc-medical-dental-residents",
+    "rbc-medical-dental-students",
+    "rbc-physicians",
     "scotiabank-medical-residents",
     "scotiabank-medical-students",
     "scotiabank-practising-physicians"
@@ -29,7 +40,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 280
+      "durationMs": 228
     },
     {
       "sourceId": "national-bank-health-science-specialists",
@@ -41,7 +52,7 @@
       "matchedValueSignals": 1,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 131
+      "durationMs": 1294
     },
     {
       "sourceId": "scotiabank-practising-physicians",
@@ -53,7 +64,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 119
+      "durationMs": 114
     },
     {
       "sourceId": "scotiabank-medical-students",
@@ -65,7 +76,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 31
+      "durationMs": 40
     },
     {
       "sourceId": "scotiabank-medical-residents",
@@ -77,7 +88,67 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 28
+      "durationMs": 32
+    },
+    {
+      "sourceId": "rbc-healthcare-advantage",
+      "provider": "RBC",
+      "sourceUrl": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 11,
+      "matchedValueSignals": 5,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 88
+    },
+    {
+      "sourceId": "rbc-medical-dental-students",
+      "provider": "RBC",
+      "sourceUrl": "https://www.rbcroyalbank.com/healthcare-financial-solutions/medical-dental-students.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 14,
+      "matchedValueSignals": 4,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 71
+    },
+    {
+      "sourceId": "rbc-medical-dental-residents",
+      "provider": "RBC",
+      "sourceUrl": "https://www.rbcroyalbank.com/healthcare-financial-solutions/medical-dental-residents.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 16,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 33
+    },
+    {
+      "sourceId": "rbc-physicians",
+      "provider": "RBC",
+      "sourceUrl": "https://www.rbcroyalbank.com/healthcare-financial-solutions/practising-professionals/physicians.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 20,
+      "matchedValueSignals": 3,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 33
+    },
+    {
+      "sourceId": "rbc-dentists",
+      "provider": "RBC",
+      "sourceUrl": "https://www.rbcroyalbank.com/healthcare-financial-solutions/practising-professionals/dentists.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 19,
+      "matchedValueSignals": 4,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 54
     },
     {
       "sourceId": "lenovo-healthcare-discount",
@@ -89,7 +160,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 184
+      "durationMs": 159
     },
     {
       "sourceId": "gmc-canada-discount-programs",
@@ -101,7 +172,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 264
+      "durationMs": 255
     }
   ]
 }
