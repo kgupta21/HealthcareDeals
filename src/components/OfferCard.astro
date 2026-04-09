@@ -4,31 +4,26 @@ import type { Promotion } from '../lib/schema';
 
 interface Props {
   promotion: Promotion;
-  hiddenInitially?: boolean;
 }
 
-const { promotion, hiddenInitially = false } = Astro.props;
+const { promotion } = Astro.props;
 
 const badgeClassMap: Record<Promotion['category'], string> = {
-  banking: 'badge-amber',
-  cards: 'badge-amber',
-  investing: 'badge-purple',
-  savings: 'badge-green',
-  lending: 'badge-blue',
-  auto: 'badge-green',
-  tech: 'badge-purple',
-  travel: 'badge-blue',
-  insurance: 'badge-red',
-  perks: 'badge-purple'
+  banking: 'badge-coral',
+  cards: 'badge-coral',
+  investing: 'badge-cobalt',
+  savings: 'badge-cobalt',
+  lending: 'badge-cobalt',
+  auto: 'badge-teal',
+  tech: 'badge-teal',
+  travel: 'badge-teal',
+  insurance: 'badge-berry',
+  perks: 'badge-berry'
 };
 ---
 
 <article
-  class:list={[
-    'report-item',
-    hiddenInitially && 'report-item--collapsed',
-    promotion.status === 'stale' && 'report-item--stale'
-  ]}
+  class:list={['report-item', promotion.status === 'stale' && 'report-item--stale']}
   data-category={promotion.category}
   data-audience={promotion.audience}
   data-provider={promotion.provider}

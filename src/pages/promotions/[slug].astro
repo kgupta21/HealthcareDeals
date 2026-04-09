@@ -17,36 +17,26 @@ if (!promotion) {
 ---
 
 <BaseLayout title={`${promotion.title} | Healthcare Deals Canada`} description={promotion.valueSummary}>
-  <section class="hero hero--detail">
-    <div class="hero-main">
-      <span class="hero-tag">{categoryLabels[promotion.category]} · {promotion.provider}</span>
-      <h1>{promotion.title}</h1>
-      <p class="hero-sub">{promotion.valueSummary}</p>
-      <div class="hero-cta">
+  <section class="page-wrap">
+    <div class="detail-hero">
+      <span class="section-kicker">{categoryLabels[promotion.category]} · {promotion.provider}</span>
+      <h1 class="directory-title detail-title">{promotion.title}</h1>
+      <p class="directory-subtitle detail-subtitle">{promotion.valueSummary}</p>
+      <div class="detail-actions">
         <a class="btn-primary" href={promotion.sourceUrl} target="_blank" rel="noreferrer">Official source</a>
-        <a class="btn-ghost" href={promotion.termsUrl} target="_blank" rel="noreferrer">Terms and conditions</a>
+        <a class="nav-link" href={promotion.termsUrl} target="_blank" rel="noreferrer">Terms and conditions</a>
       </div>
     </div>
-    <aside class="hero-sidebar">
-      <div class="hero-sidebar-header">
-        <span class="hero-sidebar-label">Verification State</span>
-        <span class="hero-sidebar-time">{statusLabels[promotion.status]}</span>
-      </div>
-      <div class="hero-sidebar-body">
-        <div class="hero-sidebar-finding">{promotion.eligibilitySummary}</div>
-        <div class="hero-sidebar-source">Audience · {audienceLabels[promotion.audience]}</div>
-      </div>
-    </aside>
   </section>
 
-  <section class="page-section">
-    <div class="page-grid">
+  <section class="page-wrap page-wrap--detail">
+    <div class="detail-grid">
       <article class="page-card prose-panel">
-        <div class="section-eyebrow">Eligibility</div>
-        <h2 class="section-title">Who this offer appears to target.</h2>
+        <div class="section-kicker">Eligibility</div>
+        <h2 class="section-title">Who this offer appears to target</h2>
         <p>{promotion.eligibilitySummary}</p>
-        <div class="section-eyebrow">Profession Tags</div>
-        <ul class="provider-stack provider-stack--tags">
+        <div class="section-kicker">Profession tags</div>
+        <ul class="tag-list">
           {promotion.professionTags.map((tag) => (
             <li>{tag}</li>
           ))}

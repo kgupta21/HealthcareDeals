@@ -9,264 +9,120 @@ const providersTracked = new Set(publicPromotions.map((promotion) => promotion.p
 const professionTags = Array.from(
   new Set(publicPromotions.flatMap((promotion) => promotion.professionTags))
 ).sort((left, right) => left.localeCompare(right));
-const latestPromotion = publicPromotions.find((promotion) => promotion.status === 'active') ?? publicPromotions[0];
 const heldBackSources = updateReport.sourceResults.filter((result) => result.status !== 'success').length;
 const providers = Array.from(new Set(publicPromotions.map((promotion) => promotion.provider))).sort();
+const activeCategories = Object.entries(categoryLabels)
+  .map(([key, label]) => ({
+    key,
+    label,
+    count: categoryCounts[key as keyof typeof categoryCounts]
+  }))
+  .filter((entry) => entry.count > 0);
 ---
 
 <BaseLayout
   title="Healthcare Deals Canada"
   description="Current promotions for healthcare professionals in Canada across banking, cards, investing, savings, lending, auto, tech, and other perks."
 >
-  <section class="hero">
-    <div class="hero-main">
-      <span class="hero-tag">Weekly Verified Directory</span>
-      <h1>
-        Current offers for Canadian healthcare professionals, <em>checked against official source pages every week.</em>
-      </h1>
-      <p class="hero-sub">
-        Banking bundles, physician borrowing programs, student and resident offers, tech discounts, and consumer perks.
-        The site only auto-publishes when the validation gate clears.
-      </p>
-      <div class="hero-cta">
-        <a class="btn-primary" href="#reports">Browse the directory</a>
-        <a class="btn-ghost" href="/about">Read methodology</a>
+  <section class="directory-shell" id="deals">
+    <div class="directory-head">
+      <div class="directory-copy">
+        <span class="section-kicker">Verified weekly</span>
+        <h1 class="directory-title">Current offers for Canadian healthcare professionals</h1>
+        <p class="directory-subtitle">
+          Checked against official Canadian source pages every week. If a tracked page fails validation, the deal stays
+          off the public list until the source matches again.
+        </p>
       </div>
-      <div class="hero-stats">
-        <div>
+      <div class="directory-stats">
+        <div class="stat-chip">
           <strong>{updateReport.publicCount}</strong>
-          <span>Public offers</span>
+          <span>Live offers</span>
         </div>
-        <div>
+        <div class="stat-chip">
           <strong>{providersTracked}</strong>
-          <span>Providers tracked</span>
+          <span>Providers</span>
         </div>
-        <div>
-          <strong>{Math.round(updateReport.sourceSuccessRate * 100)}%</strong>
-          <span>Source validation rate</span>
+        <div class="stat-chip">
+          <strong>{heldBackSources}</strong>
+          <span>Held back</span>
+        </div>
+        <div class="stat-chip">
+          <strong>{lastUpdatedLabel(updateReport)}</strong>
+          <span>Last refresh</span>
         </div>
       </div>
     </div>
-    <aside class="hero-sidebar">
-      <div class="hero-sidebar-header">
-        <span class="hero-sidebar-label">Latest Verification</span>
-        <span class="hero-sidebar-time">{lastUpdatedLabel(updateReport)}</span>
-      </div>
-      {latestPromotion && (
-        <div class="hero-sidebar-body">
-          <div class="hero-sidebar-finding">{latestPromotion.valueSummary}</div>
-          <div class="hero-sidebar-source">
-            {latestPromotion.provider} · {categoryLabels[latestPromotion.category]} · {latestPromotion.title}
-          </div>
-          <div class="hero-sidebar-divider"></div>
-          <div class="hero-sidebar-contradiction">
-            <strong>{updateReport.activeCount}</strong> offers passed the latest verification cycle.
-            {heldBackSources > 0 && (
-              <>
-                {' '}
-                <span class="contra-vs">{heldBackSources} source{heldBackSources > 1 ? 's' : ''} held back</span>
-                Validation blocked those pages from going live until the patterns match again.
-              </>
-            )}
-          </div>
-          <div class="hero-sidebar-source">
-            GitHub Action runs Monday 13:00 UTC · Auto-publish only on passing refreshes
-          </div>
-        </div>
-      )}
-    </aside>
-  </section>
 
-  <section class="reports-section" id="reports">
-    <div class="reports-inner">
-      <div class="reports-label-col">
-        <div class="section-eyebrow">Tracked Offers</div>
-        <h2 class="section-title">Official promotions, normalized into a single weekly directory.</h2>
-        <p class="section-desc">
-          Last refresh: {lastUpdatedLabel(updateReport)}. Filter by category, audience, provider, or profession tag. The
-          public directory excludes expired offers and anything that failed the latest validation pass.
-        </p>
-      </div>
-      <div>
-        <form class="filters-panel" id="deal-filters">
-          <label>
-            Category
-            <select name="category">
-              <option value="all">All categories</option>
-              {Object.entries(categoryLabels).map(([value, label]) => (
-                <option value={value}>{label}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Audience
-            <select name="audience">
-              <option value="all">All audiences</option>
-              <option value="all-healthcare-pros">All healthcare professionals</option>
-              <option value="physicians">Physicians</option>
-              <option value="medical-students">Medical students</option>
-              <option value="medical-residents">Medical residents</option>
-              <option value="nurses">Nurses</option>
-              <option value="allied-health">Allied health</option>
-            </select>
-          </label>
-          <label>
-            Provider
-            <select name="provider">
-              <option value="all">All providers</option>
-              {providers.map((provider) => (
-                <option value={provider}>{provider}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            Status
-            <select name="status">
-              <option value="all">Active + stale</option>
-              <option value="active">Verified this cycle</option>
-              <option value="stale">Needs re-check</option>
-            </select>
-          </label>
-          <label>
-            Profession tag
-            <input list="profession-tags" name="profession" type="search" placeholder="nurses, physicians, residents" />
-            <datalist id="profession-tags">
-              {professionTags.map((tag) => (
-                <option value={tag} />
-              ))}
-            </datalist>
-          </label>
-        </form>
-
-        <div class="report-list" id="report-list">
-          {publicPromotions.map((promotion, index) => (
-            <OfferCard promotion={promotion} hiddenInitially={index >= 5} />
+    <form class="filters-panel" id="deal-filters">
+      <label>
+        Category
+        <select name="category">
+          <option value="all">All categories</option>
+          {Object.entries(categoryLabels).map(([value, label]) => (
+            <option value={value}>{label}</option>
           ))}
-        </div>
+        </select>
+      </label>
+      <label>
+        Audience
+        <select name="audience">
+          <option value="all">All audiences</option>
+          <option value="all-healthcare-pros">All healthcare professionals</option>
+          <option value="physicians">Physicians</option>
+          <option value="medical-students">Medical students</option>
+          <option value="medical-residents">Medical residents</option>
+          <option value="nurses">Nurses</option>
+          <option value="allied-health">Allied health</option>
+        </select>
+      </label>
+      <label>
+        Provider
+        <select name="provider">
+          <option value="all">All providers</option>
+          {providers.map((provider) => (
+            <option value={provider}>{provider}</option>
+          ))}
+        </select>
+      </label>
+      <label>
+        Status
+        <select name="status">
+          <option value="all">Active + stale</option>
+          <option value="active">Verified this cycle</option>
+          <option value="stale">Needs re-check</option>
+        </select>
+      </label>
+      <label>
+        Profession tag
+        <input list="profession-tags" name="profession" type="search" placeholder="nurses, physicians, residents" />
+        <datalist id="profession-tags">
+          {professionTags.map((tag) => (
+            <option value={tag} />
+          ))}
+        </datalist>
+      </label>
+    </form>
 
-        {publicPromotions.length > 5 && (
-          <div class="report-load-more">
-            <button id="load-more" type="button">Show full directory</button>
-          </div>
-        )}
-      </div>
+    <div class="category-row">
+      {activeCategories.map((category) => (
+        <span class="category-chip">
+          {category.label}
+          <strong>{category.count}</strong>
+        </span>
+      ))}
     </div>
-  </section>
 
-  <section class="pipeline-section" id="pipeline">
-    <div class="pipeline-header">
-      <div class="pipeline-header-left">
-        <div class="section-eyebrow">Pipeline</div>
-        <h2 class="section-title">How the weekly refresh turns live source pages into publishable entries.</h2>
-      </div>
-      <div class="pipeline-header-right">Official URLs in → static Cloudflare Pages directory out</div>
-    </div>
-    <div class="pipeline">
-      <div class="pipeline-step">
-        <div class="pipeline-num">01</div>
-        <div class="pipeline-label">Track</div>
-        <div class="pipeline-desc">Curated Canadian source pages per provider, category, and professional segment.</div>
-      </div>
-      <div class="pipeline-step">
-        <div class="pipeline-num">02</div>
-        <div class="pipeline-label">Fetch</div>
-        <div class="pipeline-desc">The updater pulls current page HTML and extracts only official-domain signals.</div>
-      </div>
-      <div class="pipeline-step">
-        <div class="pipeline-num">03</div>
-        <div class="pipeline-label">Validate</div>
-        <div class="pipeline-desc">Required patterns must match before an offer can be marked verified.</div>
-      </div>
-      <div class="pipeline-step">
-        <div class="pipeline-num">04</div>
-        <div class="pipeline-label">Normalize</div>
-        <div class="pipeline-desc">Every promotion is converted into one common schema for the site and reports.</div>
-      </div>
-      <div class="pipeline-step">
-        <div class="pipeline-num">05</div>
-        <div class="pipeline-label">Gate</div>
-        <div class="pipeline-desc">Auto-publish stops if source success falls below 75% or the directory collapses unexpectedly.</div>
-      </div>
-      <div class="pipeline-step">
-        <div class="pipeline-num">06</div>
-        <div class="pipeline-label">Publish</div>
-        <div class="pipeline-desc">GitHub commits the generated data and Cloudflare Pages rebuilds the static site.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="coverage-section" id="coverage">
-    <div class="coverage-inner">
-      <div class="coverage-header">
-        <div>
-          <div class="section-eyebrow">Coverage</div>
-          <h2 class="section-title">Where the tracker is strong today, and where discovery is still building out.</h2>
-        </div>
-        <div class="coverage-note">Discovery candidates stay internal until they are promoted into the curated registry.</div>
-      </div>
-
-      <div class="coverage-grid">
-        <article class="coverage-card">
-          <h3>Category footprint</h3>
-          <ul class="coverage-list">
-            {Object.entries(categoryLabels).map(([category, label]) => (
-              <li>
-                <span>{label}</span>
-                <strong>{categoryCounts[category as keyof typeof categoryCounts]}</strong>
-              </li>
-            ))}
-          </ul>
-        </article>
-
-        <article class="coverage-card">
-          <h3>Audience focus</h3>
-          <p>v1 is broad by design: all healthcare professionals, with deeper coverage where the official pages are strongest.</p>
-          <ul class="coverage-bullets">
-            <li>Physicians and medical trainees have the deepest current finance coverage.</li>
-            <li>General healthcare-professional perks are tracked when the official page is Canada-specific.</li>
-            <li>Profession tags keep narrower eligibility visible without splitting the site.</li>
-          </ul>
-        </article>
-
-        <article class="coverage-card">
-          <h3>Provider roster</h3>
-          <div class="provider-stack">
-            {providers.map((provider) => (
-              <span>{provider}</span>
-            ))}
-          </div>
-        </article>
-
-        <article class="coverage-card">
-          <h3>Safeguards</h3>
-          <ul class="coverage-bullets">
-            <li>{heldBackSources} tracked source{heldBackSources !== 1 ? 's are' : ' is'} currently held back from publication.</li>
-            <li>{updateReport.activeCount} offers are live after the latest successful validation cycle.</li>
-            <li>Expired offers are removed from the public directory instead of lingering indefinitely.</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="cta-panel">
-      <div>
-        <div class="section-eyebrow">Trust Policy</div>
-        <h2 class="section-title">This is a curated tracker, not a coupon scraper.</h2>
-        <p class="section-desc">
-          Public entries must come from official Canadian source pages. Discovery finds possible additions, but they stay
-          out of the live directory until the source is formally onboarded and validated.
-        </p>
-      </div>
-      <a class="btn-primary" href="/about">See the methodology</a>
+    <div class="report-list" id="report-list">
+      {publicPromotions.map((promotion) => (
+        <OfferCard promotion={promotion} />
+      ))}
     </div>
   </section>
 
   <script>
     const form = document.querySelector('#deal-filters');
     const cards = Array.from(document.querySelectorAll('.report-item'));
-    const loadMoreButton = document.querySelector('#load-more');
 
     if (form) {
       form.addEventListener('input', () => {
@@ -289,15 +145,6 @@ const providers = Array.from(new Set(publicPromotions.map((promotion) => promoti
             !(matchesCategory && matchesAudience && matchesProvider && matchesStatus && matchesProfession)
           );
         }
-      });
-    }
-
-    if (loadMoreButton) {
-      loadMoreButton.addEventListener('click', () => {
-        for (const card of cards) {
-          card.classList.remove('report-item--collapsed');
-        }
-        loadMoreButton.closest('.report-load-more')?.remove();
       });
     }
   </script>

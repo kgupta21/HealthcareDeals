@@ -15,6 +15,11 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <script is:inline>
+      const themeKey = 'healthcaredeals-theme';
+      const savedTheme = localStorage.getItem(themeKey);
+      document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,26 +31,44 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <header class="header">
-      <a class="wordmark" href="/">Healthcare Deals Canada</a>
-      <nav class="header-nav" aria-label="Primary">
-        <a class="nav-link" href="/#reports">Directory</a>
-        <a class="nav-link" href="/#pipeline">Pipeline</a>
-        <a class="nav-link" href="/#coverage">Coverage</a>
-        <a class="nav-link" href="/about">Methodology</a>
-      </nav>
+      <div class="header-inner">
+        <a class="wordmark" href="/">Healthcare Deals Canada</a>
+        <div class="header-actions">
+          <a class="nav-link" href="/">Current deals</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+            <span data-theme-label>Dark mode</span>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <slot />
     </main>
     <footer class="footer">
       <div class="footer-inner">
-        <div class="footer-left">Healthcare Deals Canada © 2026</div>
-        <div class="footer-links">
-          <a class="footer-link" href="/#reports">Directory</a>
-          <a class="footer-link" href="/#pipeline">Pipeline</a>
-          <a class="footer-link" href="/about">Methodology</a>
-        </div>
+        <div class="footer-note">Updated weekly from official Canadian source pages.</div>
+        <a class="footer-link" href="/">Back to directory</a>
       </div>
     </footer>
+    <script is:inline>
+      const themeKey = 'healthcaredeals-theme';
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const label = toggle?.querySelector('[data-theme-label]');
+
+      const syncThemeLabel = () => {
+        const isDark = root.dataset.theme === 'dark';
+        if (label) label.textContent = isDark ? 'Light mode' : 'Dark mode';
+        toggle?.setAttribute('aria-pressed', String(isDark));
+      };
+
+      syncThemeLabel();
+
+      toggle?.addEventListener('click', () => {
+        root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem(themeKey, root.dataset.theme);
+        syncThemeLabel();
+      });
+    </script>
   </body>
 </html>
