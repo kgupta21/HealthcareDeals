@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-04-09T16:25:20.070Z",
+  "candidates": [
+    {
+      "provider": "GMC Canada",
+      "sourceId": "gmc-canada-discount-programs",
+      "url": "https://www.gmccanada.ca/content/dam/gmc/na/ca/en/index/special-offers/pdf/mobility-program/2026-update/GM_Mobility_ProgramOverview-EN_2026.pdf",
+      "title": "PROGRAM OVERVIEW",
+      "matchedPattern": "mobility"
+    },
+    {
+      "provider": "GMC Canada",
+      "sourceId": "gmc-canada-discount-programs",
+      "url": "https://www.gmccanada.ca/en/programs/student-bonus/eligible-vehicles",
+      "title": "SEE ELIGIBLE VEHICLES",
+      "matchedPattern": "programs"
+    },
+    {
+      "provider": "National Bank",
+      "sourceId": "national-bank-healthcare-pros",
+      "url": "https://www.nbc.ca/personal/mastercard-credit-cards/joint.html",
+      "title": "additional Mastercard® credit card",
+      "matchedPattern": "credit-card"
+    },
+    {
+      "provider": "National Bank",
+      "sourceId": "national-bank-healthcare-pros",
+      "url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
+      "title": "Credit cards",
+      "matchedPattern": "credit-card"
+    },
+    {
+      "provider": "National Bank",
+      "sourceId": "national-bank-healthcare-pros",
+      "url": "https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare/health-sciences.html",
+      "title": "Discover our offer",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "National Bank",
+      "sourceId": "national-bank-healthcare-pros",
+      "url": "https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare/healthcare-professionals.html",
+      "title": "Discover our offer",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "National Bank",
+      "sourceId": "national-bank-health-science-specialists",
+      "url": "https://www.nbc.ca/personal/mortgages/offers.html",
+      "title": "Mortgage offer",
+      "matchedPattern": "offer"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/content/dam/scotiabank/canada/en/documents/chequing-&-savings/day-to-day_banking_companion_booklet.pdf",
+      "title": "Account",
+      "matchedPattern": "banking"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/commercial-banking.html",
+      "title": "Commercial",
+      "matchedPattern": "banking"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/contact-us.html",
+      "title": "Contact us",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking.html",
+      "title": "English selected",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/insights.html",
+      "title": "Insights",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/practising/personal-banking/physician-mortgage.html",
+      "title": "Learn about mortgage solutions",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/practising/md.ca",
+      "title": "md.ca",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/committed-to-physicians.html",
+      "title": "Our commitment",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/our-story.html",
+      "title": "Our story",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/practising.html",
+      "title": "Practising",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/press-releases.html",
+      "title": "Press releases",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/insights/article.budgeting.how-to-manage-your-spending.html",
+      "title": "Read article COVID-19: Strategies for physicians",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/insights/article.mortgage.physicians-looking-to-purchase-an-investment-property.html",
+      "title": "Read article Looking to purchase an investment property?",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-medical-residents",
+      "url": "https://www.scotiabank.com/healthcare/ca/en/physician-banking/medical-residents.html",
+      "title": "Residents",
+      "matchedPattern": "medical-residents"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/retired/personal-banking.html",
+      "title": "Retiring",
+      "matchedPattern": "healthcare-plus"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/personal/bank-your-way/digital-banking-guide/banking-basics/scotia-smart-money/scotia-smart-money-terms-and-conditions.html",
+      "title": "Smart Savings Tool Agreement",
+      "matchedPattern": "banking"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-medical-students",
+      "url": "https://www.scotiabank.com/healthcare/ca/en/physician-banking/medical-students.html",
+      "title": "Students",
+      "matchedPattern": "medical-students"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-practising-physicians",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/form.html",
+      "title": "Submit a form now",
+      "matchedPattern": "healthcare-plus"
+    }
+  ]
+}

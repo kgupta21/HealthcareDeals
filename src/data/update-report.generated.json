@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-04-09T16:25:20.070Z",
+  "sourceCount": 7,
+  "sourceSuccessRate": 0.8571428571428571,
+  "okToPublish": true,
+  "gateFailures": [],
+  "activeCount": 6,
+  "staleCount": 0,
+  "expiredCount": 0,
+  "publicCount": 6,
+  "newlyAddedIds": [],
+  "changedIds": [
+    "gmc-canada-discount-programs",
+    "lenovo-healthcare-discount",
+    "national-bank-healthcare-pros",
+    "scotiabank-medical-residents",
+    "scotiabank-medical-students",
+    "scotiabank-practising-physicians"
+  ],
+  "removedIds": [],
+  "sourceResults": [
+    {
+      "sourceId": "national-bank-healthcare-pros",
+      "provider": "National Bank",
+      "sourceUrl": "https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 5,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 280
+    },
+    {
+      "sourceId": "national-bank-health-science-specialists",
+      "provider": "National Bank",
+      "sourceUrl": "https://www.nbc.ca/particuliers/switch-national-bank/occupations/healthcare/health-sciences.html",
+      "status": "fallback",
+      "reason": "Missing eligibility signal: Offer targets nursing and movement or rehabilitation professionals",
+      "discoveredCandidates": 2,
+      "matchedValueSignals": 1,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 131
+    },
+    {
+      "sourceId": "scotiabank-practising-physicians",
+      "provider": "Scotiabank",
+      "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/practising/personal-banking.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 29,
+      "matchedValueSignals": 3,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 119
+    },
+    {
+      "sourceId": "scotiabank-medical-students",
+      "provider": "Scotiabank",
+      "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/medical-students.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 20,
+      "matchedValueSignals": 3,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 31
+    },
+    {
+      "sourceId": "scotiabank-medical-residents",
+      "provider": "Scotiabank",
+      "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/medical-residents.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 21,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 28
+    },
+    {
+      "sourceId": "lenovo-healthcare-discount",
+      "provider": "Lenovo",
+      "sourceUrl": "https://www.lenovo.com/ca/en/discount-programs/",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 0,
+      "matchedValueSignals": 3,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 184
+    },
+    {
+      "sourceId": "gmc-canada-discount-programs",
+      "provider": "GMC Canada",
+      "sourceUrl": "https://www.gmccanada.ca/en/programs",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 2,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 1,
+      "httpStatus": 200,
+      "durationMs": 264
+    }
+  ]
+}

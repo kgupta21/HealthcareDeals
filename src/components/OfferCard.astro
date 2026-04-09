@@ -1,0 +1,58 @@
+---
+import { audienceLabels, categoryLabels, formatDateLabel, statusLabels } from '../lib/content';
+import type { Promotion } from '../lib/schema';
+
+interface Props {
+  promotion: Promotion;
+  hiddenInitially?: boolean;
+}
+
+const { promotion, hiddenInitially = false } = Astro.props;
+
+const badgeClassMap: Record<Promotion['category'], string> = {
+  banking: 'badge-amber',
+  cards: 'badge-amber',
+  investing: 'badge-purple',
+  savings: 'badge-green',
+  lending: 'badge-blue',
+  auto: 'badge-green',
+  tech: 'badge-purple',
+  travel: 'badge-blue',
+  insurance: 'badge-red',
+  perks: 'badge-purple'
+};
+---
+
+<article
+  class:list={[
+    'report-item',
+    hiddenInitially && 'report-item--collapsed',
+    promotion.status === 'stale' && 'report-item--stale'
+  ]}
+  data-category={promotion.category}
+  data-audience={promotion.audience}
+  data-provider={promotion.provider}
+  data-status={promotion.status}
+  data-professions={promotion.professionTags.join('|').toLowerCase()}
+>
+  <div class="report-item-left">
+    <div class="report-badge-wrap">
+      <span class:list={['report-badge', badgeClassMap[promotion.category]]}>{categoryLabels[promotion.category]}</span>
+      <span class="report-status">{statusLabels[promotion.status]}</span>
+    </div>
+    <h3 class="report-title">{promotion.title}</h3>
+    <p class="report-summary">{promotion.valueSummary}</p>
+    <div class="report-meta">
+      {promotion.provider} · {audienceLabels[promotion.audience]} · Verified {formatDateLabel(promotion.lastVerifiedAt)}
+    </div>
+  </div>
+  <div class="report-item-right">
+    <p class="report-proof">{promotion.eligibilitySummary}</p>
+    <div class="report-actions">
+      <a class="report-link" href={`/promotions/${promotion.slug}`}>View details</a>
+      <a class="report-link report-link--ghost" href={promotion.sourceUrl} target="_blank" rel="noreferrer">
+        Official source
+      </a>
+    </div>
+  </div>
+</article>

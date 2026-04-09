@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { audienceLabels, categoryLabels, formatDateLabel, statusLabels } from '../../lib/content';
+import { getPromotionBySlug, publicPromotions } from '../../lib/promotions';
+
+export function getStaticPaths() {
+  return publicPromotions.map((promotion) => ({
+    params: { slug: promotion.slug }
+  }));
+}
+
+const promotion = getPromotionBySlug(Astro.params.slug ?? '');
+
+if (!promotion) {
+  throw new Error(`Unknown promotion slug: ${Astro.params.slug ?? 'missing'}`);
+}
+---
+
+<BaseLayout title={`${promotion.title} | Healthcare Deals Canada`} description={promotion.valueSummary}>
+  <section class="hero hero--detail">
+    <div class="hero-main">
+      <span class="hero-tag">{categoryLabels[promotion.category]} · {promotion.provider}</span>
+      <h1>{promotion.title}</h1>
+      <p class="hero-sub">{promotion.valueSummary}</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href={promotion.sourceUrl} target="_blank" rel="noreferrer">Official source</a>
+        <a class="btn-ghost" href={promotion.termsUrl} target="_blank" rel="noreferrer">Terms and conditions</a>
+      </div>
+    </div>
+    <aside class="hero-sidebar">
+      <div class="hero-sidebar-header">
+        <span class="hero-sidebar-label">Verification State</span>
+        <span class="hero-sidebar-time">{statusLabels[promotion.status]}</span>
+      </div>
+      <div class="hero-sidebar-body">
+        <div class="hero-sidebar-finding">{promotion.eligibilitySummary}</div>
+        <div class="hero-sidebar-source">Audience · {audienceLabels[promotion.audience]}</div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="page-section">
+    <div class="page-grid">
+      <article class="page-card prose-panel">
+        <div class="section-eyebrow">Eligibility</div>
+        <h2 class="section-title">Who this offer appears to target.</h2>
+        <p>{promotion.eligibilitySummary}</p>
+        <div class="section-eyebrow">Profession Tags</div>
+        <ul class="provider-stack provider-stack--tags">
+          {promotion.professionTags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
+      </article>
+
+      <aside class="page-card meta-panel">
+        <dl>
+          <div>
+            <dt>Status</dt>
+            <dd>{statusLabels[promotion.status]}</dd>
+          </div>
+          <div>
+            <dt>Audience</dt>
+            <dd>{audienceLabels[promotion.audience]}</dd>
+          </div>
+          <div>
+            <dt>Offer type</dt>
+            <dd>{promotion.offerType}</dd>
+          </div>
+          <div>
+            <dt>Region</dt>
+            <dd>{promotion.regionScope}</dd>
+          </div>
+          <div>
+            <dt>Last verified</dt>
+            <dd>{formatDateLabel(promotion.lastVerifiedAt)}</dd>
+          </div>
+          <div>
+            <dt>Starts</dt>
+            <dd>{formatDateLabel(promotion.startsAt)}</dd>
+          </div>
+          <div>
+            <dt>Expires</dt>
+            <dd>{formatDateLabel(promotion.expiresAt)}</dd>
+          </div>
+          <div>
+            <dt>Confidence</dt>
+            <dd>{Math.round(promotion.confidence * 100)}%</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
