@@ -16,9 +16,25 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <script is:inline>
-      const themeKey = 'healthcaredeals-theme';
-      const savedTheme = localStorage.getItem(themeKey);
-      document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+      (() => {
+        const storageKey = 'healthcaredeals-theme';
+        const root = document.documentElement;
+        const getSystemTheme = () =>
+          window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const applyTheme = (theme) => {
+          root.dataset.theme = theme;
+          root.style.colorScheme = theme;
+          root.classList.toggle('theme-dark', theme === 'dark');
+          root.classList.toggle('theme-light', theme === 'light');
+        };
+
+        try {
+          const storedTheme = localStorage.getItem(storageKey);
+          applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : getSystemTheme());
+        } catch {
+          applyTheme(getSystemTheme());
+        }
+      })();
     </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +52,7 @@ const { title, description } = Astro.props;
         <div class="header-actions">
           <a class="nav-link" href="/">Current deals</a>
           <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
-            <span data-theme-label>Dark mode</span>
+            <span data-theme-label>Theme</span>
           </button>
         </div>
       </div>
@@ -51,24 +67,66 @@ const { title, description } = Astro.props;
       </div>
     </footer>
     <script is:inline>
-      const themeKey = 'healthcaredeals-theme';
-      const root = document.documentElement;
-      const toggle = document.getElementById('theme-toggle');
-      const label = toggle?.querySelector('[data-theme-label]');
+      (() => {
+        const storageKey = 'healthcaredeals-theme';
+        const root = document.documentElement;
+        const toggle = document.getElementById('theme-toggle');
+        const label = toggle?.querySelector('[data-theme-label]');
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        const getStoredTheme = () => {
+          try {
+            return localStorage.getItem(storageKey);
+          } catch {
+            return null;
+          }
+        };
 
-      const syncThemeLabel = () => {
-        const isDark = root.dataset.theme === 'dark';
-        if (label) label.textContent = isDark ? 'Light mode' : 'Dark mode';
-        toggle?.setAttribute('aria-pressed', String(isDark));
-      };
+        const applyTheme = (theme, persist = true) => {
+          root.dataset.theme = theme;
+          root.style.colorScheme = theme;
+          root.classList.toggle('theme-dark', theme === 'dark');
+          root.classList.toggle('theme-light', theme === 'light');
+          if (persist) {
+            try {
+              localStorage.setItem(storageKey, theme);
+            } catch {
+              return;
+            }
+          }
+        };
 
-      syncThemeLabel();
+        const syncThemeLabel = () => {
+          const isDark = root.dataset.theme === 'dark';
+          if (label) {
+            label.textContent = isDark ? 'Light mode' : 'Dark mode';
+          }
+          toggle?.setAttribute('aria-pressed', String(isDark));
+        };
 
-      toggle?.addEventListener('click', () => {
-        root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-        localStorage.setItem(themeKey, root.dataset.theme);
         syncThemeLabel();
-      });
+
+        toggle?.addEventListener('click', () => {
+          const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+          syncThemeLabel();
+        });
+
+        const handleSystemThemeChange = (event) => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme === 'dark' || storedTheme === 'light') {
+            return;
+          }
+
+          applyTheme(event.matches ? 'dark' : 'light', false);
+          syncThemeLabel();
+        };
+
+        if (typeof media.addEventListener === 'function') {
+          media.addEventListener('change', handleSystemThemeChange);
+        } else if (typeof media.addListener === 'function') {
+          media.addListener(handleSystemThemeChange);
+        }
+      })();
     </script>
   </body>
 </html>

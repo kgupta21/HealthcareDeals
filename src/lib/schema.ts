@@ -97,6 +97,27 @@ export const SourceDefinitionSchema = z.object({
   priority: z.number().int().min(1).max(10).default(5)
 });
 
+export const SourceCatalogCaptureSchema = z.enum(['offer-page', 'program-hub', 'profession-hub']);
+export const SourceCatalogVerificationSchema = z.enum(['confirmed', 'inferred']);
+export const SourceCatalogStatusSchema = z.enum(['active-parser', 'queued']);
+
+export const SourceCatalogEntrySchema = z.object({
+  id: z.string(),
+  provider: z.string(),
+  title: z.string(),
+  category: PromotionCategorySchema,
+  subcategory: z.string(),
+  seedUrl: z.string().url(),
+  country: z.literal('CA'),
+  audience: z.string(),
+  offerTypeHint: OfferTypeSchema,
+  captureType: SourceCatalogCaptureSchema,
+  onboardingStatus: SourceCatalogStatusSchema,
+  verificationStatus: SourceCatalogVerificationSchema,
+  official: z.literal(true),
+  notes: z.string()
+});
+
 export const SourceFetchResultSchema = z.object({
   sourceId: z.string(),
   provider: z.string(),
@@ -141,6 +162,7 @@ export const DiscoveryReportSchema = z.object({
 
 export type Promotion = z.infer<typeof PromotionSchema>;
 export type SourceDefinition = z.infer<typeof SourceDefinitionSchema>;
+export type SourceCatalogEntry = z.infer<typeof SourceCatalogEntrySchema>;
 export type SourceRule = z.infer<typeof SourceRuleSchema>;
 export type UpdateReport = z.infer<typeof UpdateReportSchema>;
 export type DiscoveryReport = z.infer<typeof DiscoveryReportSchema>;

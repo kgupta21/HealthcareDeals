@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --bg: #f5efe6;
   --bg-accent: #ebe0d2;
   --surface: rgba(255, 252, 247, 0.92);
@@ -21,6 +22,7 @@
 }
 
 :root[data-theme='dark'] {
+  color-scheme: dark;
   --bg: #121821;
   --bg-accent: #1b2330;
   --surface: rgba(23, 31, 43, 0.94);
@@ -48,11 +50,13 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--bg);
   background:
     radial-gradient(circle at top left, var(--accent-soft), transparent 34%),
     radial-gradient(circle at top right, var(--accent-alt-soft), transparent 36%),

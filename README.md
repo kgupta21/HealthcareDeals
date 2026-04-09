@@ -28,7 +28,8 @@ Useful commands:
 
 ## Data layout
 
-- `config/sources.ts` contains the curated official source registry.
+- `config/sources.ts` contains the smaller active parser registry used by the weekly updater.
+- `config/source-catalog.ts` contains the broader curated backlog of official Canadian source pages to onboard next.
 - `scripts/lib/updater.ts` fetches, validates, normalizes, and writes generated outputs.
 - `src/data/promotions.generated.json` is the tracked public data file used by the site.
 - `reports/discovery.generated.json` stores newly discovered official-domain candidates that are not yet public.
