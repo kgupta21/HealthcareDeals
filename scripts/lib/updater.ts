@@ -40,6 +40,11 @@ type RuleMatchResult = {
 
 const USER_AGENT =
   'Mozilla/5.0 (compatible; HealthcareDealsBot/1.0; +https://github.com/kgupta21/HealthcareDeals)';
+const FETCH_TIMEOUT_MS = 15000;
+const SLOW_DOMAIN_TIMEOUTS: Record<string, number> = {
+  'www.bmo.com': 30000,
+  'bmo.com': 30000
+};
 
 export async function runUpdate(options: { dryRun?: boolean } = {}): Promise<{
   promotions: Promotion[];
@@ -154,7 +159,8 @@ export async function extractPromotion(
       headers: {
         'user-agent': USER_AGENT,
         accept: 'text/html,application/xhtml+xml'
-      }
+      },
+      signal: AbortSignal.timeout(getFetchTimeoutMs(source.seedUrl))
     });
 
     const html = await response.text();
@@ -428,6 +434,11 @@ function resolveCanonicalUrl(baseUrl: string, candidate?: string): string {
   } catch {
     return baseUrl;
   }
+}
+
+function getFetchTimeoutMs(url: string): number {
+  const hostname = new URL(url).hostname;
+  return SLOW_DOMAIN_TIMEOUTS[hostname] ?? FETCH_TIMEOUT_MS;
 }
 
 function buildFingerprint(provider: string, title: string, category: string, sourceUrl: string): string {

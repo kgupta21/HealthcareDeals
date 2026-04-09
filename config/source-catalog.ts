@@ -1,6 +1,6 @@
 import type { SourceCatalogEntry } from '../src/lib/schema';
 
-export const curatedSourceCatalog: SourceCatalogEntry[] = [
+const rawSourceCatalog: SourceCatalogEntry[] = [
   {
     id: 'nbc-healthcare-hub',
     provider: 'National Bank',
@@ -343,7 +343,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     title: 'Professional student package',
     category: 'banking',
     subcategory: 'student banking',
-    seedUrl: 'https://www.td.com/ca/en/personal-banking/solutions/student-banking/professional-student-package',
+    seedUrl: 'https://www.td.com/ca/en/personal-banking/solutions/student-banking/grad-professional-student-solutions',
     country: 'CA',
     audience: 'Professional students including medicine and dentistry',
     offerTypeHint: 'bundle',
@@ -407,7 +407,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     title: 'Student borrowing hub',
     category: 'lending',
     subcategory: 'student borrowing',
-    seedUrl: 'https://www.bmo.com/en-ca/main/personal/loans-line-of-credit/student-borrowing/',
+    seedUrl: 'https://www.bmo.com/main/personal/loans-line-of-credit/student-borrowing/',
     country: 'CA',
     audience: 'Students, including healthcare professions',
     offerTypeHint: 'rate',
@@ -423,7 +423,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     title: 'Professional student line of credit',
     category: 'lending',
     subcategory: 'student line of credit',
-    seedUrl: 'https://www.bmo.com/en-ca/main/personal/loans-line-of-credit/student-borrowing/professional-student-line-of-credit/',
+    seedUrl: 'https://www.bmo.com/main/personal/loans-line-of-credit/student-borrowing/professional-student-line-of-credit/',
     country: 'CA',
     audience: 'Professional students',
     offerTypeHint: 'rate',
@@ -439,7 +439,7 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     title: 'Medical and dental student line of credit',
     category: 'lending',
     subcategory: 'student line of credit',
-    seedUrl: 'https://www.bmo.com/en-ca/main/personal/loans-line-of-credit/student-borrowing/medical-dental-student-line-of-credit/',
+    seedUrl: 'https://www.bmo.com/main/personal/loans-line-of-credit/student-borrowing/medical-dental-student-line-of-credit/',
     country: 'CA',
     audience: 'Medical and dental students',
     offerTypeHint: 'rate',
@@ -642,3 +642,8 @@ export const curatedSourceCatalog: SourceCatalogEntry[] = [
     notes: 'Official Cadillac Canada preferred-pricing pattern; validate healthcare-specific eligibility before parsing.'
   }
 ];
+
+export const curatedSourceCatalog: SourceCatalogEntry[] = rawSourceCatalog.map((entry) => ({
+  ...entry,
+  onboardingStatus: 'active-parser'
+}));

@@ -375,7 +375,7 @@ main {
 
 .report-title {
   margin: 0 0 10px;
-  font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
   line-height: 1.02;
 }
 

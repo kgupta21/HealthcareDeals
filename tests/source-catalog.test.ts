@@ -14,11 +14,10 @@ describe('curated source catalog', () => {
     expect(parsed.every((entry) => entry.seedUrl.startsWith('https://'))).toBe(true);
   });
 
-  it('retains a mix of confirmed and queued sources for safe onboarding', () => {
+  it('marks the full catalog as active while preserving verification confidence levels', () => {
     const parsed = SourceCatalogEntrySchema.array().parse(curatedSourceCatalog);
 
-    expect(parsed.some((entry) => entry.onboardingStatus === 'active-parser')).toBe(true);
-    expect(parsed.some((entry) => entry.onboardingStatus === 'queued')).toBe(true);
+    expect(parsed.every((entry) => entry.onboardingStatus === 'active-parser')).toBe(true);
     expect(parsed.some((entry) => entry.verificationStatus === 'confirmed')).toBe(true);
     expect(parsed.some((entry) => entry.verificationStatus === 'inferred')).toBe(true);
   });

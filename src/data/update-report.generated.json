@@ -1,32 +1,81 @@
 {
-  "generatedAt": "2026-04-09T17:20:21.171Z",
-  "sourceCount": 12,
-  "sourceSuccessRate": 0.9166666666666666,
+  "generatedAt": "2026-04-09T17:49:00.789Z",
+  "sourceCount": 41,
+  "sourceSuccessRate": 0.926829268292683,
   "okToPublish": true,
   "gateFailures": [],
-  "activeCount": 11,
+  "activeCount": 37,
   "staleCount": 0,
-  "expiredCount": 0,
-  "publicCount": 11,
+  "expiredCount": 1,
+  "publicCount": 37,
   "newlyAddedIds": [
-    "rbc-dentists",
-    "rbc-healthcare-advantage",
-    "rbc-medical-dental-residents",
-    "rbc-medical-dental-students",
-    "rbc-physicians"
+    "cadillac-preferred-pricing",
+    "chevrolet-preferred-pricing",
+    "cibc-dentists",
+    "cibc-internationally-trained-dentists",
+    "cibc-optometry",
+    "cibc-physicians",
+    "cibc-healthcare-hub",
+    "desjardins-medical-specialists",
+    "desjardins-nurses",
+    "desjardins-pharmacist-owners",
+    "desjardins-pharmacists",
+    "desjardins-resident-doctors",
+    "desjardins-offers-hub",
+    "gmc-preferred-pricing",
+    "nbc-healthcare-professionals",
+    "national-bank-health-science-specialists",
+    "rbc-healthcare-hub",
+    "scotia-healthcare-plus",
+    "scotia-physician-banking-hub",
+    "td-healthcare-business",
+    "td-professional-student-loc",
+    "td-professional-student-package",
+    "td-wealth-dentists-physicians",
+    "td-wealth-retired-physicians",
+    "td-wealth-students-residents",
+    "under-armour-healthcare-discount",
+    "samsung-ca-offers-program"
   ],
   "changedIds": [
+    "cadillac-preferred-pricing",
+    "chevrolet-preferred-pricing",
+    "cibc-dentists",
+    "cibc-internationally-trained-dentists",
+    "cibc-optometry",
+    "cibc-physicians",
+    "cibc-healthcare-hub",
+    "desjardins-medical-specialists",
+    "desjardins-nurses",
+    "desjardins-pharmacist-owners",
+    "desjardins-pharmacists",
+    "desjardins-resident-doctors",
+    "desjardins-offers-hub",
+    "gmc-preferred-pricing",
     "gmc-canada-discount-programs",
     "lenovo-healthcare-discount",
+    "nbc-healthcare-professionals",
+    "national-bank-health-science-specialists",
     "national-bank-healthcare-pros",
+    "rbc-healthcare-hub",
     "rbc-dentists",
     "rbc-healthcare-advantage",
     "rbc-medical-dental-residents",
     "rbc-medical-dental-students",
     "rbc-physicians",
+    "scotia-healthcare-plus",
+    "scotia-physician-banking-hub",
     "scotiabank-medical-residents",
     "scotiabank-medical-students",
-    "scotiabank-practising-physicians"
+    "scotiabank-practising-physicians",
+    "td-healthcare-business",
+    "td-professional-student-loc",
+    "td-professional-student-package",
+    "td-wealth-dentists-physicians",
+    "td-wealth-retired-physicians",
+    "td-wealth-students-residents",
+    "under-armour-healthcare-discount",
+    "samsung-ca-offers-program"
   ],
   "removedIds": [],
   "sourceResults": [
@@ -36,23 +85,23 @@
       "sourceUrl": "https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare.html",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 5,
+      "discoveredCandidates": 3,
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 228
+      "durationMs": 309
     },
     {
       "sourceId": "national-bank-health-science-specialists",
       "provider": "National Bank",
-      "sourceUrl": "https://www.nbc.ca/particuliers/switch-national-bank/occupations/healthcare/health-sciences.html",
-      "status": "fallback",
-      "reason": "Missing eligibility signal: Offer targets nursing and movement or rehabilitation professionals",
-      "discoveredCandidates": 2,
+      "sourceUrl": "https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare/health-sciences.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 1,
       "matchedValueSignals": 1,
-      "matchedEligibilitySignals": 1,
+      "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 1294
+      "durationMs": 161
     },
     {
       "sourceId": "scotiabank-practising-physicians",
@@ -60,11 +109,11 @@
       "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/practising/personal-banking.html",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 29,
+      "discoveredCandidates": 27,
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 114
+      "durationMs": 113
     },
     {
       "sourceId": "scotiabank-medical-students",
@@ -72,11 +121,11 @@
       "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/medical-students.html",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 20,
+      "discoveredCandidates": 19,
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 40
+      "durationMs": 59
     },
     {
       "sourceId": "scotiabank-medical-residents",
@@ -84,11 +133,11 @@
       "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking/medical-residents.html",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 21,
+      "discoveredCandidates": 20,
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 32
+      "durationMs": 59
     },
     {
       "sourceId": "rbc-healthcare-advantage",
@@ -100,7 +149,7 @@
       "matchedValueSignals": 5,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 88
+      "durationMs": 301
     },
     {
       "sourceId": "rbc-medical-dental-students",
@@ -112,7 +161,7 @@
       "matchedValueSignals": 4,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 71
+      "durationMs": 147
     },
     {
       "sourceId": "rbc-medical-dental-residents",
@@ -124,7 +173,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 33
+      "durationMs": 139
     },
     {
       "sourceId": "rbc-physicians",
@@ -136,7 +185,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 33
+      "durationMs": 165
     },
     {
       "sourceId": "rbc-dentists",
@@ -148,7 +197,7 @@
       "matchedValueSignals": 4,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 54
+      "durationMs": 177
     },
     {
       "sourceId": "lenovo-healthcare-discount",
@@ -160,7 +209,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 159
+      "durationMs": 554
     },
     {
       "sourceId": "gmc-canada-discount-programs",
@@ -172,7 +221,355 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 255
+      "durationMs": 239
+    },
+    {
+      "sourceId": "nbc-healthcare-professionals",
+      "provider": "National Bank",
+      "sourceUrl": "https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare/healthcare-professionals.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 76,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 289
+    },
+    {
+      "sourceId": "scotia-healthcare-plus",
+      "provider": "Scotiabank",
+      "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 19,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 36
+    },
+    {
+      "sourceId": "scotia-physician-banking-hub",
+      "provider": "Scotiabank",
+      "sourceUrl": "https://www.scotiabank.com/ca/en/healthcare-plus/physician-banking.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 40,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 34
+    },
+    {
+      "sourceId": "rbc-healthcare-hub",
+      "provider": "RBC",
+      "sourceUrl": "https://www.rbcroyalbank.com/healthcare-financial-solutions/",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 11,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 90
+    },
+    {
+      "sourceId": "cibc-healthcare-hub",
+      "provider": "CIBC",
+      "sourceUrl": "https://www.cibc.com/en/business/banking-for-professionals/healthcare.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 215,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 310
+    },
+    {
+      "sourceId": "cibc-physicians",
+      "provider": "CIBC",
+      "sourceUrl": "https://www.cibc.com/en/business/banking-for-professionals/healthcare/physicians.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 226,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 459
+    },
+    {
+      "sourceId": "cibc-dentists",
+      "provider": "CIBC",
+      "sourceUrl": "https://www.cibc.com/en/business/banking-for-professionals/dentists.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 226,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 549
+    },
+    {
+      "sourceId": "cibc-optometry",
+      "provider": "CIBC",
+      "sourceUrl": "https://www.cibc.com/en/business/banking-for-professionals/optometry.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 226,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 558
+    },
+    {
+      "sourceId": "cibc-internationally-trained-dentists",
+      "provider": "CIBC",
+      "sourceUrl": "https://www.cibc.com/en/business/banking-for-professionals/internationally-trained-dentists.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 207,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 304
+    },
+    {
+      "sourceId": "td-healthcare-business",
+      "provider": "TD",
+      "sourceUrl": "https://www.td.com/ca/en/business-banking/solutions/small-business/professional-banking/banking-for-healthcare-professionals",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 271,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 98
+    },
+    {
+      "sourceId": "td-professional-student-loc",
+      "provider": "TD",
+      "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/borrowing/lines-of-credit/professional-student-line-of-credit",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 349,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 30
+    },
+    {
+      "sourceId": "td-professional-student-package",
+      "provider": "TD",
+      "sourceUrl": "https://www.td.com/ca/en/personal-banking/solutions/student-banking/grad-professional-student-solutions",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 351,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 40
+    },
+    {
+      "sourceId": "td-wealth-students-residents",
+      "provider": "TD",
+      "sourceUrl": "https://www.td.com/ca/en/investing/wealth/healthcare-professionals/students-and-residents",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 186,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 29
+    },
+    {
+      "sourceId": "td-wealth-dentists-physicians",
+      "provider": "TD",
+      "sourceUrl": "https://www.td.com/ca/en/investing/wealth/healthcare-professionals/dentists-and-practising-physicians",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 183,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 27
+    },
+    {
+      "sourceId": "td-wealth-retired-physicians",
+      "provider": "TD",
+      "sourceUrl": "https://www.td.com/ca/en/investing/wealth/healthcare-professionals/retired-physicians",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 211,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 27
+    },
+    {
+      "sourceId": "bmo-student-borrowing-hub",
+      "provider": "BMO",
+      "sourceUrl": "https://www.bmo.com/main/personal/loans-line-of-credit/student-borrowing/",
+      "status": "failed",
+      "reason": "The operation was aborted due to timeout",
+      "discoveredCandidates": 0,
+      "matchedValueSignals": 0,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": null,
+      "durationMs": 30006
+    },
+    {
+      "sourceId": "bmo-professional-student-loc",
+      "provider": "BMO",
+      "sourceUrl": "https://www.bmo.com/main/personal/loans-line-of-credit/student-borrowing/professional-student-line-of-credit/",
+      "status": "failed",
+      "reason": "The operation was aborted due to timeout",
+      "discoveredCandidates": 0,
+      "matchedValueSignals": 0,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": null,
+      "durationMs": 30002
+    },
+    {
+      "sourceId": "bmo-medical-dental-loc",
+      "provider": "BMO",
+      "sourceUrl": "https://www.bmo.com/main/personal/loans-line-of-credit/student-borrowing/medical-dental-student-line-of-credit/",
+      "status": "failed",
+      "reason": "The operation was aborted due to timeout",
+      "discoveredCandidates": 0,
+      "matchedValueSignals": 0,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": null,
+      "durationMs": 30001
+    },
+    {
+      "sourceId": "desjardins-offers-hub",
+      "provider": "Desjardins",
+      "sourceUrl": "https://www.desjardins.com/en/offers.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 88,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 103
+    },
+    {
+      "sourceId": "desjardins-nurses",
+      "provider": "Desjardins",
+      "sourceUrl": "https://www.desjardins.com/en/offers/professionals/nurse.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 96,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 33
+    },
+    {
+      "sourceId": "desjardins-pharmacists",
+      "provider": "Desjardins",
+      "sourceUrl": "https://www.desjardins.com/en/offers/professionals/pharmacist.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 97,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 33
+    },
+    {
+      "sourceId": "desjardins-resident-doctors",
+      "provider": "Desjardins",
+      "sourceUrl": "https://www.desjardins.com/en/offers/professionals/resident-doctor.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 97,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 57
+    },
+    {
+      "sourceId": "desjardins-medical-specialists",
+      "provider": "Desjardins",
+      "sourceUrl": "https://www.desjardins.com/en/offers/professionals/medical-specialist.html",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 97,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 31
+    },
+    {
+      "sourceId": "desjardins-pharmacist-owners",
+      "provider": "Desjardins",
+      "sourceUrl": "https://www.desjardins.com/ca/personal/you-are/professionals/pharmacist-owners/index.jsp",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 48,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 98
+    },
+    {
+      "sourceId": "samsung-ca-offers-program",
+      "provider": "Samsung",
+      "sourceUrl": "https://www.samsung.com/ca/offer/offers-program/",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 240,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 1116
+    },
+    {
+      "sourceId": "under-armour-healthcare-discount",
+      "provider": "Under Armour",
+      "sourceUrl": "https://www.underarmour.ca/en-ca/c/healthcare-discount/",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 227,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 335
+    },
+    {
+      "sourceId": "gmc-preferred-pricing",
+      "provider": "GMC",
+      "sourceUrl": "https://www.gmccanada.ca/en/programs/preferred-pricing",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 56,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 225
+    },
+    {
+      "sourceId": "chevrolet-preferred-pricing",
+      "provider": "Chevrolet",
+      "sourceUrl": "https://www.chevrolet.ca/en/programs/preferred-pricing",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 83,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 118
+    },
+    {
+      "sourceId": "cadillac-preferred-pricing",
+      "provider": "Cadillac",
+      "sourceUrl": "https://www.cadillaccanada.ca/en/programs/preferred-pricing",
+      "status": "success",
+      "reason": null,
+      "discoveredCandidates": 12,
+      "matchedValueSignals": 2,
+      "matchedEligibilitySignals": 0,
+      "httpStatus": 200,
+      "durationMs": 414
     }
   ]
 }

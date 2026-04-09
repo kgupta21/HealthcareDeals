@@ -1,6 +1,7 @@
+import { curatedSourceCatalog } from './source-catalog';
 import type { SourceDefinition } from '../src/lib/schema';
 
-export const sourceDefinitions: SourceDefinition[] = [
+const manualSourceDefinitions: SourceDefinition[] = [
   {
     id: 'national-bank-healthcare-pros',
     provider: 'National Bank',
@@ -76,7 +77,7 @@ export const sourceDefinitions: SourceDefinition[] = [
     id: 'national-bank-health-science-specialists',
     provider: 'National Bank',
     category: 'banking',
-    seedUrl: 'https://www.nbc.ca/particuliers/switch-national-bank/occupations/healthcare/health-sciences.html',
+    seedUrl: 'https://www.nbc.ca/personal/switch-national-bank/occupations/healthcare/health-sciences.html',
     country: 'CA',
     extractorType: 'pattern-summary',
     allowedDomains: ['www.nbc.ca', 'nbc.ca'],
@@ -120,18 +121,7 @@ export const sourceDefinitions: SourceDefinition[] = [
         pattern: 'eligible Mastercard rewards credit card'
       }
     ],
-    eligibilityRules: [
-      {
-        label: 'Offer targets nursing and movement or rehabilitation professionals',
-        pattern: 'Nursing|Movement and rehabilitation',
-        required: true
-      },
-      {
-        label: 'Offer also includes psychology, social work, and medical imaging or laboratory professionals',
-        pattern: 'Psychology and social work|Laboratory and medical imaging|medical imaging',
-        required: true
-      }
-    ],
+    eligibilityRules: [],
     dateRules: [],
     termsLinkPatterns: ['terms', 'conditions', 'legal', 'notes'],
     priority: 9
@@ -634,3 +624,225 @@ export const sourceDefinitions: SourceDefinition[] = [
     priority: 6
   }
 ];
+
+const STOP_WORDS = new Set([
+  'and',
+  'the',
+  'for',
+  'canada',
+  'current',
+  'official',
+  'offer',
+  'offers',
+  'program',
+  'programs',
+  'page',
+  'pages',
+  'hub',
+  'banking',
+  'bundle',
+  'solution',
+  'solutions'
+]);
+
+const PROFESSION_MATCHERS = [
+  { pattern: /\bmedical students?\b/, label: 'medical students' },
+  { pattern: /\bdental students?\b/, label: 'dental students' },
+  { pattern: /\bmedical residents?\b/, label: 'medical residents' },
+  { pattern: /\bdental residents?\b/, label: 'dental residents' },
+  { pattern: /\bresident doctors?\b/, label: 'resident doctors' },
+  { pattern: /\bretired physicians?\b/, label: 'retired physicians' },
+  { pattern: /\bphysicians?\b|\bdoctors?\b/, label: 'physicians' },
+  { pattern: /\bdentists?\b/, label: 'dentists' },
+  { pattern: /\bnurses?\b/, label: 'nurses' },
+  { pattern: /\bpharmacists?\b/, label: 'pharmacists' },
+  { pattern: /\bpharmacist-owners?\b|\bpharmacist owners?\b/, label: 'pharmacist owners' },
+  { pattern: /\bmedical specialists?\b/, label: 'medical specialists' },
+  { pattern: /\boptometrists?\b/, label: 'optometrists' },
+  { pattern: /\bveterinarians?\b/, label: 'veterinarians' },
+  { pattern: /\bhealthcare workers?\b/, label: 'healthcare workers' },
+  { pattern: /\bhealthcare professionals?\b/, label: 'all healthcare professionals' }
+];
+
+function normalizeSourceUrl(url: string): string {
+  return url.replace(/\/+$/, '');
+}
+
+function escapeRegex(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function uniqueValues(values: string[]): string[] {
+  return [...new Set(values)];
+}
+
+function extractMeaningfulTokens(value: string): string[] {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .split(/\s+/)
+    .filter((token) => token.length > 2 && !STOP_WORDS.has(token));
+}
+
+function inferAudience(entry: (typeof curatedSourceCatalog)[number]): SourceDefinition['audience'] {
+  const haystack = `${entry.title} ${entry.audience} ${entry.notes}`.toLowerCase();
+  if (haystack.includes('dentist') && !haystack.includes('physician') && !haystack.includes('student')) {
+    return 'dentists';
+  }
+  if (haystack.includes('student')) {
+    return 'medical-students';
+  }
+  if (haystack.includes('resident')) {
+    return 'medical-residents';
+  }
+  if (haystack.includes('nurse')) {
+    return 'nurses';
+  }
+  if (haystack.includes('physician') || haystack.includes('doctor')) {
+    return 'physicians';
+  }
+  if (
+    haystack.includes('optometrist') ||
+    haystack.includes('pharmacist') ||
+    haystack.includes('veterinarian') ||
+    haystack.includes('allied')
+  ) {
+    return 'allied-health';
+  }
+
+  return 'all-healthcare-pros';
+}
+
+function inferProfessionTags(entry: (typeof curatedSourceCatalog)[number]): string[] {
+  const haystack = `${entry.title} ${entry.audience} ${entry.notes} ${entry.seedUrl}`.toLowerCase();
+  const matches = PROFESSION_MATCHERS.filter(({ pattern }) => pattern.test(haystack)).map(({ label }) => label);
+  return matches.length > 0 ? uniqueValues(matches) : ['all healthcare professionals'];
+}
+
+function buildRequiredPattern(entry: (typeof curatedSourceCatalog)[number]): string {
+  if (entry.id === 'desjardins-offers-hub') {
+    return '(?=.*desjardins)(?=.*offers)';
+  }
+
+  const pathname = new URL(entry.seedUrl).pathname;
+  const trailingSegment = pathname
+    .split('/')
+    .filter(Boolean)
+    .at(-1)
+    ?.replace(/\.[a-z0-9]+$/i, '') ?? '';
+  const tokens = uniqueValues([
+    ...extractMeaningfulTokens(entry.title),
+    ...extractMeaningfulTokens(entry.subcategory),
+    ...extractMeaningfulTokens(trailingSegment),
+    ...extractMeaningfulTokens(entry.provider)
+  ]).slice(0, 3);
+
+  const requiredTokens = tokens.length > 0 ? tokens : [entry.provider.toLowerCase()];
+  return requiredTokens.map((token) => `(?=.*${escapeRegex(token)})`).join('');
+}
+
+function buildPrimaryLabel(entry: (typeof curatedSourceCatalog)[number]): string {
+  if (entry.captureType === 'program-hub') {
+    return `${entry.provider} keeps an official ${entry.subcategory} page for ${entry.audience.toLowerCase()} in Canada`;
+  }
+  if (entry.category === 'lending') {
+    return `${entry.provider} lists current ${entry.subcategory} details for ${entry.audience.toLowerCase()} in Canada`;
+  }
+  if (entry.category === 'investing') {
+    return `${entry.provider} maintains a current ${entry.subcategory} page for ${entry.audience.toLowerCase()}`;
+  }
+  if (entry.category === 'auto' || entry.category === 'tech' || entry.category === 'perks') {
+    return `${entry.provider} maintains an official ${entry.title.toLowerCase()} page in Canada`;
+  }
+
+  return `${entry.provider} maintains an official ${entry.title.toLowerCase()} page for Canadian healthcare professionals`;
+}
+
+function buildValueRules(entry: (typeof curatedSourceCatalog)[number]): SourceDefinition['valueRules'] {
+  const rules: SourceDefinition['valueRules'] = [
+    {
+      label: buildPrimaryLabel(entry),
+      pattern: buildRequiredPattern(entry),
+      required: true
+    }
+  ];
+
+  if (entry.category === 'banking' || entry.category === 'lending') {
+    rules.push({
+      label: `${entry.provider} page highlights banking, borrowing, rate, fee, or line-of-credit details`,
+      pattern: 'line of credit|credit line|banking|borrow|prime|preferred|save|fee|offer|financing'
+    });
+  }
+
+  if (entry.category === 'investing') {
+    rules.push({
+      label: `${entry.provider} page highlights advisory, wealth, or planning support for healthcare professionals`,
+      pattern: 'wealth|planning|advisor|invest|portfolio|retirement|advice'
+    });
+  }
+
+  if (entry.category === 'tech' || entry.category === 'perks' || entry.category === 'auto') {
+    rules.push({
+      label: `${entry.provider} page highlights pricing, discount, or special-offer details`,
+      pattern: 'discount|pricing|offer|special offer|save|verification|preferred'
+    });
+  }
+
+  return rules;
+}
+
+function buildDiscoveryPatterns(entry: (typeof curatedSourceCatalog)[number], professionTags: string[]): string[] {
+  const pathname = new URL(entry.seedUrl).pathname;
+  return uniqueValues([
+    ...extractMeaningfulTokens(pathname),
+    ...extractMeaningfulTokens(entry.title),
+    ...extractMeaningfulTokens(entry.subcategory),
+    ...professionTags.flatMap((tag) => extractMeaningfulTokens(tag)),
+    'healthcare',
+    'offer',
+    'promotion'
+  ]).slice(0, 12);
+}
+
+function buildCatalogSourceDefinition(entry: (typeof curatedSourceCatalog)[number]): SourceDefinition {
+  const hostname = new URL(entry.seedUrl).hostname;
+  const bareHostname = hostname.startsWith('www.') ? hostname.slice(4) : hostname;
+  const professionTags = inferProfessionTags(entry);
+
+  return {
+    id: entry.id,
+    provider: entry.provider,
+    category: entry.category,
+    seedUrl: entry.seedUrl,
+    country: 'CA',
+    extractorType: 'pattern-summary',
+    allowedDomains: uniqueValues([hostname, bareHostname]),
+    discoveryPatterns: buildDiscoveryPatterns(entry, professionTags),
+    professionTargets: professionTags,
+    enabled: true,
+    title: entry.title,
+    subcategory: entry.subcategory,
+    audience: inferAudience(entry),
+    regionScope: 'Canada',
+    offerType: entry.offerTypeHint,
+    professionTags,
+    valueRules: buildValueRules(entry),
+    eligibilityRules: [],
+    dateRules: [
+      {
+        field: 'expiresAt',
+        pattern: '(?:Offer end(?:s)?|Valid until|Offer valid until|Promotion ends?)\\s*:?[\\s-]*([A-Za-z]+ \\d{1,2}, \\d{4})'
+      }
+    ],
+    termsLinkPatterns: ['terms', 'conditions', 'legal', 'disclaimer', 'offer', 'program'],
+    priority: entry.captureType === 'offer-page' ? 7 : 6
+  };
+}
+
+const knownManualSeedUrls = new Set(manualSourceDefinitions.map((definition) => normalizeSourceUrl(definition.seedUrl)));
+
+const catalogSourceDefinitions = curatedSourceCatalog
+  .filter((entry) => !knownManualSeedUrls.has(normalizeSourceUrl(entry.seedUrl)))
+  .map((entry) => buildCatalogSourceDefinition(entry));
+
+export const sourceDefinitions: SourceDefinition[] = [...manualSourceDefinitions, ...catalogSourceDefinitions];
