@@ -1,42 +1,14 @@
 {
-  "generatedAt": "2026-04-09T17:49:00.789Z",
+  "generatedAt": "2026-04-13T14:25:21.112Z",
   "sourceCount": 41,
   "sourceSuccessRate": 0.926829268292683,
   "okToPublish": true,
   "gateFailures": [],
-  "activeCount": 37,
+  "activeCount": 38,
   "staleCount": 0,
-  "expiredCount": 1,
-  "publicCount": 37,
-  "newlyAddedIds": [
-    "cadillac-preferred-pricing",
-    "chevrolet-preferred-pricing",
-    "cibc-dentists",
-    "cibc-internationally-trained-dentists",
-    "cibc-optometry",
-    "cibc-physicians",
-    "cibc-healthcare-hub",
-    "desjardins-medical-specialists",
-    "desjardins-nurses",
-    "desjardins-pharmacist-owners",
-    "desjardins-pharmacists",
-    "desjardins-resident-doctors",
-    "desjardins-offers-hub",
-    "gmc-preferred-pricing",
-    "nbc-healthcare-professionals",
-    "national-bank-health-science-specialists",
-    "rbc-healthcare-hub",
-    "scotia-healthcare-plus",
-    "scotia-physician-banking-hub",
-    "td-healthcare-business",
-    "td-professional-student-loc",
-    "td-professional-student-package",
-    "td-wealth-dentists-physicians",
-    "td-wealth-retired-physicians",
-    "td-wealth-students-residents",
-    "under-armour-healthcare-discount",
-    "samsung-ca-offers-program"
-  ],
+  "expiredCount": 0,
+  "publicCount": 38,
+  "newlyAddedIds": [],
   "changedIds": [
     "cadillac-preferred-pricing",
     "chevrolet-preferred-pricing",
@@ -63,6 +35,7 @@
     "rbc-medical-dental-residents",
     "rbc-medical-dental-students",
     "rbc-physicians",
+    "samsung-ca-offers-program",
     "scotia-healthcare-plus",
     "scotia-physician-banking-hub",
     "scotiabank-medical-residents",
@@ -74,8 +47,7 @@
     "td-wealth-dentists-physicians",
     "td-wealth-retired-physicians",
     "td-wealth-students-residents",
-    "under-armour-healthcare-discount",
-    "samsung-ca-offers-program"
+    "under-armour-healthcare-discount"
   ],
   "removedIds": [],
   "sourceResults": [
@@ -89,7 +61,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 309
+      "durationMs": 275
     },
     {
       "sourceId": "national-bank-health-science-specialists",
@@ -101,7 +73,7 @@
       "matchedValueSignals": 1,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 161
+      "durationMs": 96
     },
     {
       "sourceId": "scotiabank-practising-physicians",
@@ -113,7 +85,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 113
+      "durationMs": 225
     },
     {
       "sourceId": "scotiabank-medical-students",
@@ -125,7 +97,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 59
+      "durationMs": 79
     },
     {
       "sourceId": "scotiabank-medical-residents",
@@ -137,7 +109,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 59
+      "durationMs": 158
     },
     {
       "sourceId": "rbc-healthcare-advantage",
@@ -149,7 +121,7 @@
       "matchedValueSignals": 5,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 301
+      "durationMs": 194
     },
     {
       "sourceId": "rbc-medical-dental-students",
@@ -161,7 +133,7 @@
       "matchedValueSignals": 4,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 147
+      "durationMs": 359
     },
     {
       "sourceId": "rbc-medical-dental-residents",
@@ -173,7 +145,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 139
+      "durationMs": 193
     },
     {
       "sourceId": "rbc-physicians",
@@ -197,7 +169,7 @@
       "matchedValueSignals": 4,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 177
+      "durationMs": 222
     },
     {
       "sourceId": "lenovo-healthcare-discount",
@@ -209,7 +181,7 @@
       "matchedValueSignals": 3,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 554
+      "durationMs": 747
     },
     {
       "sourceId": "gmc-canada-discount-programs",
@@ -221,7 +193,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 1,
       "httpStatus": 200,
-      "durationMs": 239
+      "durationMs": 3057
     },
     {
       "sourceId": "nbc-healthcare-professionals",
@@ -233,7 +205,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 289
+      "durationMs": 172
     },
     {
       "sourceId": "scotia-healthcare-plus",
@@ -245,7 +217,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 36
+      "durationMs": 112
     },
     {
       "sourceId": "scotia-physician-banking-hub",
@@ -257,7 +229,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 34
+      "durationMs": 175
     },
     {
       "sourceId": "rbc-healthcare-hub",
@@ -269,7 +241,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 90
+      "durationMs": 196
     },
     {
       "sourceId": "cibc-healthcare-hub",
@@ -281,7 +253,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 310
+      "durationMs": 227
     },
     {
       "sourceId": "cibc-physicians",
@@ -293,7 +265,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 459
+      "durationMs": 445
     },
     {
       "sourceId": "cibc-dentists",
@@ -305,7 +277,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 549
+      "durationMs": 345
     },
     {
       "sourceId": "cibc-optometry",
@@ -317,7 +289,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 558
+      "durationMs": 389
     },
     {
       "sourceId": "cibc-internationally-trained-dentists",
@@ -329,7 +301,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 304
+      "durationMs": 374
     },
     {
       "sourceId": "td-healthcare-business",
@@ -341,7 +313,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 98
+      "durationMs": 110
     },
     {
       "sourceId": "td-professional-student-loc",
@@ -349,11 +321,11 @@
       "sourceUrl": "https://www.td.com/ca/en/personal-banking/products/borrowing/lines-of-credit/professional-student-line-of-credit",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 349,
+      "discoveredCandidates": 348,
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 30
+      "durationMs": 40
     },
     {
       "sourceId": "td-professional-student-package",
@@ -361,11 +333,11 @@
       "sourceUrl": "https://www.td.com/ca/en/personal-banking/solutions/student-banking/grad-professional-student-solutions",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 351,
+      "discoveredCandidates": 350,
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 40
+      "durationMs": 36
     },
     {
       "sourceId": "td-wealth-students-residents",
@@ -377,7 +349,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 29
+      "durationMs": 40
     },
     {
       "sourceId": "td-wealth-dentists-physicians",
@@ -389,7 +361,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 27
+      "durationMs": 34
     },
     {
       "sourceId": "td-wealth-retired-physicians",
@@ -401,7 +373,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 27
+      "durationMs": 38
     },
     {
       "sourceId": "bmo-student-borrowing-hub",
@@ -413,7 +385,7 @@
       "matchedValueSignals": 0,
       "matchedEligibilitySignals": 0,
       "httpStatus": null,
-      "durationMs": 30006
+      "durationMs": 30002
     },
     {
       "sourceId": "bmo-professional-student-loc",
@@ -425,7 +397,7 @@
       "matchedValueSignals": 0,
       "matchedEligibilitySignals": 0,
       "httpStatus": null,
-      "durationMs": 30002
+      "durationMs": 30001
     },
     {
       "sourceId": "bmo-medical-dental-loc",
@@ -449,7 +421,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 103
+      "durationMs": 111
     },
     {
       "sourceId": "desjardins-nurses",
@@ -461,7 +433,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 33
+      "durationMs": 725
     },
     {
       "sourceId": "desjardins-pharmacists",
@@ -473,7 +445,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 33
+      "durationMs": 2954
     },
     {
       "sourceId": "desjardins-resident-doctors",
@@ -485,7 +457,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 57
+      "durationMs": 1084
     },
     {
       "sourceId": "desjardins-medical-specialists",
@@ -497,7 +469,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 31
+      "durationMs": 710
     },
     {
       "sourceId": "desjardins-pharmacist-owners",
@@ -509,7 +481,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 98
+      "durationMs": 714
     },
     {
       "sourceId": "samsung-ca-offers-program",
@@ -517,11 +489,11 @@
       "sourceUrl": "https://www.samsung.com/ca/offer/offers-program/",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 240,
+      "discoveredCandidates": 242,
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 1116
+      "durationMs": 412
     },
     {
       "sourceId": "under-armour-healthcare-discount",
@@ -529,11 +501,11 @@
       "sourceUrl": "https://www.underarmour.ca/en-ca/c/healthcare-discount/",
       "status": "success",
       "reason": null,
-      "discoveredCandidates": 227,
+      "discoveredCandidates": 226,
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 335
+      "durationMs": 407
     },
     {
       "sourceId": "gmc-preferred-pricing",
@@ -545,7 +517,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 225
+      "durationMs": 227
     },
     {
       "sourceId": "chevrolet-preferred-pricing",
@@ -557,7 +529,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 118
+      "durationMs": 185
     },
     {
       "sourceId": "cadillac-preferred-pricing",
@@ -569,7 +541,7 @@
       "matchedValueSignals": 2,
       "matchedEligibilitySignals": 0,
       "httpStatus": 200,
-      "durationMs": 414
+      "durationMs": 6778
     }
   ]
 }

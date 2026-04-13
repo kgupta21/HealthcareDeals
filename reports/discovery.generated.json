@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T17:49:00.789Z",
+  "generatedAt": "2026-04-13T14:25:21.112Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -3231,8 +3231,8 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/mobile-accessories/all-mobile-accessories/?wearables+watch-straps",
-      "title": "Galaxy Watch Accessories",
+      "url": "https://www.samsung.com/ca/mobile-accessories/all-mobile-accessories/?galaxy-watch-ultra+galaxy-watch8+galaxy-watch7",
+      "title": "Galaxy Watch Accessories NEW",
       "matchedPattern": "samsung"
     },
     {
@@ -3721,8 +3721,22 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/multistore/education1/galaxy-s26-ultra/buy/",
+      "title": "Shop now",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/support/sign-language/",
       "title": "Sign Language Support",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/multistore/education1/offers_epp/handraiser/",
+      "title": "Sign up now",
       "matchedPattern": "samsung"
     },
     {
@@ -5071,6 +5085,13 @@
     },
     {
       "provider": "TD",
+      "sourceId": "td-wealth-students-residents",
+      "url": "https://www.td.com/ca/en/investing/direct-investing-spring-offer",
+      "title": "Get Offer",
+      "matchedPattern": "investing"
+    },
+    {
+      "provider": "TD",
       "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/advice/day-to-day-banking/payment-plans",
       "title": "Get the most out of my credit card",
@@ -5856,7 +5877,7 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/us/en/investing/start-investing",
+      "url": "https://www.td.com/us/en/investing",
       "title": "TD Bank Personal Financial Services",
       "matchedPattern": "personal"
     },
@@ -6226,13 +6247,6 @@
     },
     {
       "provider": "TD",
-      "sourceId": "td-wealth-students-residents",
-      "url": "https://www.td.com/us/en/investing",
-      "title": "United States",
-      "matchedPattern": "investing"
-    },
-    {
-      "provider": "TD",
       "sourceId": "td-healthcare-business",
       "url": "https://www.td.com/ca/en/business-banking/small-business/growing-your-business/social-commerce",
       "title": "Use emerging creative tactics to boost your presence",
@@ -6325,13 +6339,6 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/solutions/ways-to-bank",
-      "title": "Ways to Bank",
-      "matchedPattern": "personal"
-    },
-    {
-      "provider": "TD",
-      "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/ways-to-bank/ways-to-send/etransfer",
       "title": "Ways to send money",
       "matchedPattern": "personal"
@@ -6417,21 +6424,21 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (126)",
+      "title": "$25 - $50 CAD (129)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=50.00&pmax=75.00",
-      "title": "$50 - $75 CAD (94)",
+      "title": "$50 - $75 CAD (92)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (68)",
+      "title": "$75 - $100 CAD (64)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7039,13 +7046,6 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Gemini",
-      "title": "Gemini",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/girls/",
       "title": "Girls",
       "matchedPattern": "healthcare"
@@ -7460,7 +7460,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=200.00&pmax=9%2C999.00",
-      "title": "Over $200 CAD (14)",
+      "title": "Over $200 CAD (13)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7817,7 +7817,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=0.00&pmax=25.00",
-      "title": "Under $25 CAD (37)",
+      "title": "Under $25 CAD (33)",
       "matchedPattern": "healthcare"
     },
     {
