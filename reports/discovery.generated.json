@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-13T14:25:21.112Z",
+  "generatedAt": "2026-04-20T14:26:16.049Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -3420,6 +3420,13 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/monitors/monitor-buying-guide/",
+      "title": "Monitor Buying Guide",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/monitors/all-monitors/",
       "title": "Monitors",
       "matchedPattern": "samsung"
@@ -3863,6 +3870,13 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tv-accessories/all-tv-accessories/",
       "title": "TV Accessories",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/tvs/tv-buying-guide/",
+      "title": "TV Buying Guide",
       "matchedPattern": "samsung"
     },
     {
@@ -4490,6 +4504,13 @@
     },
     {
       "provider": "TD",
+      "sourceId": "td-healthcare-business",
+      "url": "https://www.td.com/content/tdcomca/en/business-banking/small-business/credit-cards",
+      "title": "Business Credit Cards",
+      "matchedPattern": "business"
+    },
+    {
+      "provider": "TD",
       "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/products/insurance/td-business-credit-protection",
       "title": "Business Credit Protection",
@@ -4834,7 +4855,7 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/special-offers/#tab2",
+      "url": "https://www.td.com/ca/en/personal-banking/products/special-offers/chequing-offers",
       "title": "Explore all offers",
       "matchedPattern": "personal"
     },
@@ -4911,7 +4932,7 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/special-offers/#tab3",
+      "url": "https://www.td.com/ca/en/personal-banking/products/special-offers/credit-card-offers",
       "title": "Explore promotions and offers",
       "matchedPattern": "personal"
     },
@@ -5772,6 +5793,13 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
+      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/lines-of-credit/undergraduate-student-line-of-credit",
+      "title": "Student Line of Credit",
+      "matchedPattern": "personal"
+    },
+    {
+      "provider": "TD",
+      "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/solutions/student-banking",
       "title": "Students",
       "matchedPattern": "personal"
@@ -5970,13 +5998,6 @@
       "sourceId": "td-healthcare-business",
       "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/business/card-management-tool",
       "title": "TD Card Management Tool",
-      "matchedPattern": "business"
-    },
-    {
-      "provider": "TD",
-      "sourceId": "td-healthcare-business",
-      "url": "https://www.td.com/ca/en/business-banking/commercial/",
-      "title": "TD Commercial Banking",
       "matchedPattern": "business"
     },
     {
@@ -6417,28 +6438,28 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (62)",
+      "title": "$100 - $200 CAD (64)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (129)",
+      "title": "$25 - $50 CAD (133)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=50.00&pmax=75.00",
-      "title": "$50 - $75 CAD (92)",
+      "title": "$50 - $75 CAD (96)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (64)",
+      "title": "$75 - $100 CAD (67)",
       "matchedPattern": "healthcare"
     },
     {
@@ -6607,6 +6628,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=32%2F38",
       "title": "32/38",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=33%2F31",
+      "title": "33/31",
       "matchedPattern": "healthcare"
     },
     {
@@ -6859,13 +6887,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=agegroup&prefv1=Adult",
       "title": "Adult",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Anti-Odor",
-      "title": "Anti-Odor",
       "matchedPattern": "healthcare"
     },
     {
@@ -7817,7 +7838,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=0.00&pmax=25.00",
-      "title": "Under $25 CAD (33)",
+      "title": "Under $25 CAD (35)",
       "matchedPattern": "healthcare"
     },
     {
