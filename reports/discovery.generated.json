@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T14:59:17.382Z",
+  "generatedAt": "2026-05-11T15:50:44.775Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -55,13 +55,6 @@
       "sourceId": "cadillac-preferred-pricing",
       "url": "https://www.cadillaccanada.ca/en/ownership/vehicle-technology/supercruise#",
       "title": "SUPER CRUISE™",
-      "matchedPattern": "vehicle"
-    },
-    {
-      "provider": "Cadillac",
-      "sourceId": "cadillac-preferred-pricing",
-      "url": "https://www.cadillaccanada.ca/en/all-vehicles",
-      "title": "VEHICLE LINE-UP",
       "matchedPattern": "vehicle"
     },
     {
@@ -144,7 +137,7 @@
     {
       "provider": "Chevrolet",
       "sourceId": "chevrolet-preferred-pricing",
-      "url": "https://www.chevrolet.ca/en/electric/previous-year-silverado-ev",
+      "url": "https://www.chevrolet.ca/en/electric/silverado-ev",
       "title": "Vehicle Details",
       "matchedPattern": "vehicle"
     },
@@ -215,13 +208,6 @@
       "provider": "Chevrolet",
       "sourceId": "chevrolet-preferred-pricing",
       "url": "https://www.chevrolet.ca/en/trucks/silverado-hd",
-      "title": "Vehicle Details",
-      "matchedPattern": "vehicle"
-    },
-    {
-      "provider": "Chevrolet",
-      "sourceId": "chevrolet-preferred-pricing",
-      "url": "https://www.chevrolet.ca/en/electric/previous-year-equinox-ev",
       "title": "Vehicle Details",
       "matchedPattern": "vehicle"
     },
@@ -857,6 +843,13 @@
     },
     {
       "provider": "CIBC",
+      "sourceId": "cibc-internationally-trained-dentists",
+      "url": "https://www.cibc.com/en/student/student-hub.html",
+      "title": "Get started",
+      "matchedPattern": "html"
+    },
+    {
+      "provider": "CIBC",
       "sourceId": "cibc-healthcare-hub",
       "url": "https://www.cibc.com/en/business/global-money-transfer.html",
       "title": "Global Money Transfer™",
@@ -1005,8 +998,8 @@
     {
       "provider": "CIBC",
       "sourceId": "cibc-healthcare-hub",
-      "url": "https://www.cibc.com/en/business/advice-centre/articles/small-business-101/business-payment-options.html",
-      "title": "Learn more about our different payment options.",
+      "url": "https://www.cibc.com/en/business/advice-centre/articles/small-business-101/when-to-get-a-business-credit-card.html",
+      "title": "Learn more about opening a business credit card",
       "matchedPattern": "business"
     },
     {
@@ -1014,6 +1007,13 @@
       "sourceId": "cibc-internationally-trained-dentists",
       "url": "https://www.cibc.com/en/journeys/banking-offers-for-newcomers/newcomer-mortgage.html",
       "title": "Learn more about our mortgage programs for newcomers.",
+      "matchedPattern": "html"
+    },
+    {
+      "provider": "CIBC",
+      "sourceId": "cibc-internationally-trained-dentists",
+      "url": "https://www.cibc.com/en/journeys/partners/student.html?refcode=PD",
+      "title": "Learn more About Prep Doctors.",
       "matchedPattern": "html"
     },
     {
@@ -1466,10 +1466,10 @@
     },
     {
       "provider": "Desjardins",
-      "sourceId": "desjardins-pharmacist-owners",
-      "url": "https://www.desjardins.com/ca/contact-us/index.jsp?idSectionRacine=3&niveauSectionRacine=1&idSectionFocus=36&niveauSectionFocus=3&navigMW=pp",
+      "sourceId": "desjardins-offers-hub",
+      "url": "https://www.desjardins.com/en/help/profile-security/change-address-contact-information.html?navigMW=pp",
       "title": "Change your address",
-      "matchedPattern": "you"
+      "matchedPattern": "html"
     },
     {
       "provider": "Desjardins",
@@ -2730,13 +2730,6 @@
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=should-you-incorporate-your-medical-practice-understand-your-options-2",
       "title": "Read Moreto the article about healthcare",
       "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "RBC",
-      "sourceId": "rbc-healthcare-advantage",
-      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/royal-credit-line/index.html",
-      "title": "Student and Resident Line of Credit",
-      "matchedPattern": "healthcare-financial-solutions"
     },
     {
       "provider": "RBC",
@@ -4806,7 +4799,7 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing",
+      "url": "https://www.td.com/ca/en/personal-banking/products/loans-and-lines-of-credit",
       "title": "Explore",
       "matchedPattern": "personal"
     },
@@ -5204,6 +5197,13 @@
     },
     {
       "provider": "TD",
+      "sourceId": "td-professional-student-loc",
+      "url": "https://www.td.com/ca/en/personal-banking/advice/borrowing/how-to-manage-debt",
+      "title": "Help me manage debt",
+      "matchedPattern": "personal"
+    },
+    {
+      "provider": "TD",
       "sourceId": "td-wealth-students-residents",
       "url": "https://www.td.com/ca/en/investing/search?query=How%20is%20private%20banking%20different%20from%20wealth%20management?&source=1",
       "title": "How is private banking different from wealth management?",
@@ -5296,13 +5296,6 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/lines-of-credit/investment-secured-line-of-credit",
-      "title": "Investment Secured Line of Credit",
-      "matchedPattern": "personal"
-    },
-    {
-      "provider": "TD",
-      "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/personal-investing/learn",
       "title": "Learn about investing",
       "matchedPattern": "personal"
@@ -5353,7 +5346,7 @@
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/personal-loan-line-of-credit-calculator",
-      "title": "Loan/Line of Credit Calculator",
+      "title": "Loan vs Line of Credit Calculator",
       "matchedPattern": "personal"
     },
     {
@@ -5548,14 +5541,14 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/lines-of-credit/personal-line-of-credit",
+      "url": "https://www.td.com/ca/en/personal-banking/products/loans-and-lines-of-credit/personal-line-of-credit",
       "title": "Personal Line of Credit",
       "matchedPattern": "personal"
     },
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/loans/benefits-of-a-personal-loan",
+      "url": "https://www.td.com/ca/en/personal-banking/products/loans-and-lines-of-credit/personal-loan",
       "title": "Personal Loan",
       "matchedPattern": "personal"
     },
@@ -5688,7 +5681,7 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/loans/rsp-loan",
+      "url": "https://www.td.com/ca/en/personal-banking/products/loans-and-lines-of-credit/rsp-loan",
       "title": "RSP Loan",
       "matchedPattern": "personal"
     },
@@ -6297,15 +6290,8 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/loans/buying-a-car",
+      "url": "https://www.td.com/ca/en/personal-banking/products/loans-and-lines-of-credit/vehicle-loan",
       "title": "Vehicle Loan",
-      "matchedPattern": "personal"
-    },
-    {
-      "provider": "TD",
-      "sourceId": "td-professional-student-loc",
-      "url": "https://www.td.com/ca/en/personal-banking/products/borrowing/car-loan-calculator",
-      "title": "Vehicle Loan Calculator",
       "matchedPattern": "personal"
     },
     {
@@ -6466,28 +6452,28 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (65)",
+      "title": "$100 - $200 CAD (63)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (137)",
+      "title": "$25 - $50 CAD (135)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=50.00&pmax=75.00",
-      "title": "$50 - $75 CAD (104)",
+      "title": "$50 - $75 CAD (103)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (69)",
+      "title": "$75 - $100 CAD (68)",
       "matchedPattern": "healthcare"
     },
     {
@@ -6579,6 +6565,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=19.5",
       "title": "19.5",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=28%2F30",
+      "title": "28/30",
       "matchedPattern": "healthcare"
     },
     {
@@ -7326,20 +7319,6 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+MD",
-      "title": "Left MD",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+MD+Cadet",
-      "title": "Left MD Cadet",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+MDLG",
       "title": "Left MDLG",
       "matchedPattern": "healthcare"
@@ -7349,13 +7328,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+MDLG+Cadet",
       "title": "Left MDLG Cadet",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM",
-      "title": "Left SM",
       "matchedPattern": "healthcare"
     },
     {
@@ -7558,7 +7530,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=200.00&pmax=9%2C999.00",
-      "title": "Over $200 CAD (13)",
+      "title": "Over $200 CAD (14)",
       "matchedPattern": "healthcare"
     },
     {
@@ -8082,6 +8054,20 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YLG+Plus",
+      "title": "YLG Plus",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YMD+Plus",
+      "title": "YMD Plus",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/youth_unisex/",
       "title": "Youth Unisex",
       "matchedPattern": "healthcare"
@@ -8091,6 +8077,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YSM+Plus",
       "title": "YSM Plus",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YXL+Plus",
+      "title": "YXL Plus",
       "matchedPattern": "healthcare"
     }
   ]
