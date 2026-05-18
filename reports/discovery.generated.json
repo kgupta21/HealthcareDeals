@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T15:50:44.775Z",
+  "generatedAt": "2026-05-18T16:15:24.056Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -130,7 +130,7 @@
     {
       "provider": "Chevrolet",
       "sourceId": "chevrolet-preferred-pricing",
-      "url": "https://www.chevrolet.ca/en/electric/previous-year-blazer-ev",
+      "url": "https://www.chevrolet.ca/en/electric/blazer-ev",
       "title": "Vehicle Details",
       "matchedPattern": "vehicle"
     },
@@ -270,7 +270,7 @@
     {
       "provider": "Chevrolet",
       "sourceId": "chevrolet-preferred-pricing",
-      "url": "https://www.chevrolet.ca/en/commercial/previous-year-silverado-ev",
+      "url": "https://www.chevrolet.ca/en/commercial/silverado-ev",
       "title": "Vehicle Details",
       "matchedPattern": "vehicle"
     },
@@ -3126,7 +3126,7 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/computers/galaxy-book/galaxy-book6-series/buy/?modelCode=NP760XJG-KG1CA",
+      "url": "https://www.samsung.com/ca/computers/galaxy-book/galaxy-book6-series/buy/",
       "title": "Galaxy Book6 NEW",
       "matchedPattern": "samsung"
     },
@@ -3154,7 +3154,7 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/audio-sound/galaxy-buds4-pro/buy/?modelCode=SM-R640NZWAXAC",
+      "url": "https://www.samsung.com/ca/audio-sound/galaxy-buds4-pro/buy/",
       "title": "Galaxy Buds4 Pro NEW",
       "matchedPattern": "samsung"
     },
@@ -3210,7 +3210,7 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/tablets/galaxy-tab-s11/buy/?modelCode=SM-X730NZAAXAC",
+      "url": "https://www.samsung.com/ca/tablets/galaxy-tab-s11/buy/",
       "title": "Galaxy Tab S11",
       "matchedPattern": "samsung"
     },
@@ -3238,7 +3238,7 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/watches/galaxy-watch8/buy/?modelCode=SM-L505FZKAXAC",
+      "url": "https://www.samsung.com/ca/watches/galaxy-watch8/buy/",
       "title": "Galaxy Watch8",
       "matchedPattern": "samsung"
     },
@@ -3462,13 +3462,6 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/offer/mothers-day-gift-ideas/",
-      "title": "Mother’s Day",
-      "matchedPattern": "samsung"
-    },
-    {
-      "provider": "Samsung",
-      "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/mypage/",
       "title": "My page",
       "matchedPattern": "samsung"
@@ -3646,6 +3639,13 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/samsungaccount/?language=en#/mysamsung/",
       "title": "Samsung Account",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/offer/samsung-week/",
+      "title": "Samsung AI Week",
       "matchedPattern": "samsung"
     },
     {
@@ -6452,28 +6452,28 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (63)",
+      "title": "$100 - $200 CAD (68)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (135)",
+      "title": "$25 - $50 CAD (118)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=50.00&pmax=75.00",
-      "title": "$50 - $75 CAD (103)",
+      "title": "$50 - $75 CAD (105)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (68)",
+      "title": "$75 - $100 CAD (65)",
       "matchedPattern": "healthcare"
     },
     {
@@ -6565,13 +6565,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=19.5",
       "title": "19.5",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=28%2F30",
-      "title": "28/30",
       "matchedPattern": "healthcare"
     },
     {
@@ -7305,13 +7298,6 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+LG",
-      "title": "Left LG",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+LG+Cadet",
       "title": "Left LG Cadet",
       "matchedPattern": "healthcare"
@@ -7333,15 +7319,15 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM+Cadet",
-      "title": "Left SM Cadet",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM",
+      "title": "Left SM",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+XL",
-      "title": "Left XL",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM+Cadet",
+      "title": "Left SM Cadet",
       "matchedPattern": "healthcare"
     },
     {
@@ -7530,7 +7516,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=200.00&pmax=9%2C999.00",
-      "title": "Over $200 CAD (14)",
+      "title": "Over $200 CAD (13)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7629,20 +7615,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+2XL",
       "title": "Right 2XL",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+LG",
-      "title": "Right LG",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+MD",
-      "title": "Right MD",
       "matchedPattern": "healthcare"
     },
     {
@@ -7901,7 +7873,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=0.00&pmax=25.00",
-      "title": "Under $25 CAD (37)",
+      "title": "Under $25 CAD (33)",
       "matchedPattern": "healthcare"
     },
     {
@@ -8049,20 +8021,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/yellow/",
       "title": "Yellow",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YLG+Plus",
-      "title": "YLG Plus",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YMD+Plus",
-      "title": "YMD Plus",
       "matchedPattern": "healthcare"
     },
     {
