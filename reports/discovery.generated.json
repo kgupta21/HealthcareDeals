@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T16:15:24.056Z",
+  "generatedAt": "2026-05-25T15:44:33.292Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -739,6 +739,13 @@
     {
       "provider": "CIBC",
       "sourceId": "cibc-healthcare-hub",
+      "url": "https://www.cibc.com/en/about-cibc/sustainability.html",
+      "title": "Corporate Responsibility",
+      "matchedPattern": "html"
+    },
+    {
+      "provider": "CIBC",
+      "sourceId": "cibc-healthcare-hub",
       "url": "https://www.cibc.com/en/business/credit-cards/costco-mastercard-business.html",
       "title": "Costco Business Mastercard ®",
       "matchedPattern": "business"
@@ -784,6 +791,13 @@
       "url": "https://www.cibc.com/en/business/accounts/everyday-business-operating-account.html",
       "title": "Everyday Operating Account",
       "matchedPattern": "business"
+    },
+    {
+      "provider": "CIBC",
+      "sourceId": "cibc-healthcare-hub",
+      "url": "https://www.cibc.com/en/personal-banking/smart-advice/growing-wealth.html",
+      "title": "explore our growing wealth resources",
+      "matchedPattern": "html"
     },
     {
       "provider": "CIBC",
@@ -2503,9 +2517,9 @@
     {
       "provider": "National Bank",
       "sourceId": "nbc-healthcare-professionals",
-      "url": "https://www.nbc.ca/natbank/personal.html",
+      "url": "https://www.nbc.ca/natbank/particuliers.html",
       "title": "Natbank",
-      "matchedPattern": "personal"
+      "matchedPattern": "bank"
     },
     {
       "provider": "National Bank",
@@ -6452,14 +6466,14 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (68)",
+      "title": "$100 - $200 CAD (64)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (118)",
+      "title": "$25 - $50 CAD (119)",
       "matchedPattern": "healthcare"
     },
     {
@@ -6473,7 +6487,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (65)",
+      "title": "$75 - $100 CAD (66)",
       "matchedPattern": "healthcare"
     },
     {
@@ -6635,13 +6649,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=32%2F36",
       "title": "32/36",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=32%2F38",
-      "title": "32/38",
       "matchedPattern": "healthcare"
     },
     {
@@ -7305,6 +7312,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+MD",
+      "title": "Left MD",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+MDLG",
       "title": "Left MDLG",
       "matchedPattern": "healthcare"
@@ -7319,15 +7333,15 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM",
-      "title": "Left SM",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM+Cadet",
+      "title": "Left SM Cadet",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM+Cadet",
-      "title": "Left SM Cadet",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+XL",
+      "title": "Left XL",
       "matchedPattern": "healthcare"
     },
     {
@@ -7516,7 +7530,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=200.00&pmax=9%2C999.00",
-      "title": "Over $200 CAD (13)",
+      "title": "Over $200 CAD (12)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7620,6 +7634,20 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+LG",
+      "title": "Right LG",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+MD",
+      "title": "Right MD",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+MDLG",
       "title": "Right MDLG",
       "matchedPattern": "healthcare"
@@ -7678,13 +7706,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/sandals_and_slides/",
       "title": "Sandals and Slides",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Scramjet",
-      "title": "Scramjet",
       "matchedPattern": "healthcare"
     },
     {
@@ -7873,7 +7894,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=0.00&pmax=25.00",
-      "title": "Under $25 CAD (33)",
+      "title": "Under $25 CAD (37)",
       "matchedPattern": "healthcare"
     },
     {
