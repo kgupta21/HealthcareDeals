@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T15:44:33.292Z",
+  "generatedAt": "2026-06-01T18:31:53.221Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -54,7 +54,7 @@
       "provider": "Cadillac",
       "sourceId": "cadillac-preferred-pricing",
       "url": "https://www.cadillaccanada.ca/en/ownership/vehicle-technology/supercruise#",
-      "title": "SUPER CRUISE™",
+      "title": "Super CruiseTM",
       "matchedPattern": "vehicle"
     },
     {
@@ -571,14 +571,14 @@
     {
       "provider": "CIBC",
       "sourceId": "cibc-healthcare-hub",
-      "url": "https://www.cibc.com/en/asset-management/overview.html",
+      "url": "https://www.cibc.com/en/gam/overview.html",
       "title": "CIBC Asset Management",
       "matchedPattern": "html"
     },
     {
       "provider": "CIBC",
       "sourceId": "cibc-healthcare-hub",
-      "url": "https://www.cibc.com/en/asset-management/institutional.html",
+      "url": "https://www.cibc.com/en/gam/institutional.html",
       "title": "CIBC Asset Management — Institutional",
       "matchedPattern": "html"
     },
@@ -2642,23 +2642,23 @@
     },
     {
       "provider": "RBC",
-      "sourceId": "rbc-medical-dental-students",
+      "sourceId": "rbc-physicians",
       "url": "https://www.rbcroyalbank.com/rbcrewards/",
       "title": "Avion Rewards",
       "matchedPattern": "avion"
     },
     {
       "provider": "RBC",
-      "sourceId": "rbc-physicians",
-      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage-pro.html#business",
-      "title": "Explore Offers",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/journey-guide/index.html",
+      "title": "Explore Now",
       "matchedPattern": "healthcare-financial-solutions"
     },
     {
       "provider": "RBC",
-      "sourceId": "rbc-medical-dental-residents",
-      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/index.html?topic=healthcare-home-buying",
-      "title": "home-buying articles",
+      "sourceId": "rbc-physicians",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage-pro.html#business",
+      "title": "Explore Offers",
       "matchedPattern": "healthcare-financial-solutions"
     },
     {
@@ -2719,20 +2719,6 @@
     },
     {
       "provider": "RBC",
-      "sourceId": "rbc-medical-dental-residents",
-      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=four-questions-medical-residents-should-answer-before-buying-a-home",
-      "title": "Read more",
-      "matchedPattern": "healthcare-financial-solutions"
-    },
-    {
-      "provider": "RBC",
-      "sourceId": "rbc-medical-dental-residents",
-      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=how-to-create-a-business-plan-for-your-medical-practice",
-      "title": "Read more",
-      "matchedPattern": "healthcare-financial-solutions"
-    },
-    {
-      "provider": "RBC",
       "sourceId": "rbc-healthcare-hub",
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=4-things-to-consider-when-buying-a-dental-practice-in-canada",
       "title": "Read Moreto the article about healthcare",
@@ -2744,6 +2730,13 @@
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=should-you-incorporate-your-medical-practice-understand-your-options-2",
       "title": "Read Moreto the article about healthcare",
       "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare/en/royal-credit-line/index.html",
+      "title": "Royal Credit Line for medical and dental residents",
+      "matchedPattern": "royal-credit-line"
     },
     {
       "provider": "RBC",
@@ -3022,7 +3015,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/crystal-uhd-4k-tv/",
-      "title": "Crystal UHD NEW",
+      "title": "Crystal UHD",
       "matchedPattern": "samsung"
     },
     {
@@ -3119,6 +3112,13 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/computers/all-computers/",
+      "title": "Galaxy Book",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/galaxy-book/",
       "title": "Galaxy Book",
       "matchedPattern": "samsung"
@@ -3128,13 +3128,6 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/computer-accessories/all-computer-accessories/",
       "title": "Galaxy Book Accessories",
-      "matchedPattern": "samsung"
-    },
-    {
-      "provider": "Samsung",
-      "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/computers/all-computers/",
-      "title": "Galaxy Book NEW",
       "matchedPattern": "samsung"
     },
     {
@@ -3246,7 +3239,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/mobile-accessories/all-mobile-accessories/?galaxy-watch-ultra+galaxy-watch8+galaxy-watch7",
-      "title": "Galaxy Watch Accessories NEW",
+      "title": "Galaxy Watch Accessories",
       "matchedPattern": "samsung"
     },
     {
@@ -3289,6 +3282,13 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/help-me-choose/",
       "title": "Help choose my TV",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/home-appliances/buying-guide/",
+      "title": "Home Appliance Buying Guide",
       "matchedPattern": "samsung"
     },
     {
@@ -3400,7 +3400,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/micro-rgb-tv/",
-      "title": "Micro RGB NEW",
+      "title": "Micro RGB",
       "matchedPattern": "samsung"
     },
     {
@@ -3421,7 +3421,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/mini-led-tvs/",
-      "title": "Mini LED NEW",
+      "title": "Mini LED",
       "matchedPattern": "samsung"
     },
     {
@@ -3491,7 +3491,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/neo-qled/",
-      "title": "Neo QLED NEW",
+      "title": "Neo QLED",
       "matchedPattern": "samsung"
     },
     {
@@ -3526,7 +3526,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/oled-tv/",
-      "title": "OLED NEW",
+      "title": "OLED",
       "matchedPattern": "samsung"
     },
     {
@@ -3603,7 +3603,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/cooking-appliances/ranges/",
-      "title": "Ranges NEW",
+      "title": "Ranges",
       "matchedPattern": "samsung"
     },
     {
@@ -3630,15 +3630,15 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/refrigerators/",
+      "url": "https://www.samsung.com/ca/refrigerators/all-refrigerators/",
       "title": "Refrigerators",
       "matchedPattern": "samsung"
     },
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/refrigerators/all-refrigerators/",
-      "title": "Refrigerators NEW",
+      "url": "https://www.samsung.com/ca/refrigerators/",
+      "title": "Refrigerators",
       "matchedPattern": "samsung"
     },
     {
@@ -3819,15 +3819,15 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/audio-devices/",
+      "url": "https://www.samsung.com/ca/audio-devices/all-audio-devices/",
       "title": "Sound Devices",
       "matchedPattern": "samsung"
     },
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/audio-devices/all-audio-devices/",
-      "title": "Sound Devices NEW",
+      "url": "https://www.samsung.com/ca/audio-devices/",
+      "title": "Sound Devices",
       "matchedPattern": "samsung"
     },
     {
@@ -3848,7 +3848,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/tvs/the-frame/",
-      "title": "The Frame NEW",
+      "title": "The Frame",
       "matchedPattern": "samsung"
     },
     {
@@ -4044,7 +4044,7 @@
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/audio-devices/wireless-speaker/",
-      "title": "WiFi Speakers NEW",
+      "title": "WiFi Speakers",
       "matchedPattern": "samsung"
     },
     {
@@ -4463,6 +4463,20 @@
     {
       "provider": "TD",
       "sourceId": "td-professional-student-loc",
+      "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/business-credit-card-basics",
+      "title": "Basics of Business Credit Cards",
+      "matchedPattern": "personal"
+    },
+    {
+      "provider": "TD",
+      "sourceId": "td-professional-student-loc",
+      "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/credit-card-basics",
+      "title": "Basics of Credit Cards",
+      "matchedPattern": "personal"
+    },
+    {
+      "provider": "TD",
+      "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/how-to/digital-banking/bill-payment-transfers",
       "title": "Bill payment and transfers",
       "matchedPattern": "personal"
@@ -4522,6 +4536,13 @@
       "url": "https://www.td.com/ca/en/business-banking/small-business/starting-your-business/building-an-online-storefront",
       "title": "Building an Online Storefront with TD eCommerce Solutions",
       "matchedPattern": "business"
+    },
+    {
+      "provider": "TD",
+      "sourceId": "td-professional-student-loc",
+      "url": "https://www.td.com/ca/en/personal-banking/advice/borrowing/how-to-build-credit-score",
+      "title": "Building your credit",
+      "matchedPattern": "personal"
     },
     {
       "provider": "TD",
@@ -5277,6 +5298,13 @@
       "sourceId": "td-professional-student-loc",
       "url": "https://www.td.com/ca/en/personal-banking/solutions/new-to-canada/international-students",
       "title": "International Students",
+      "matchedPattern": "personal"
+    },
+    {
+      "provider": "TD",
+      "sourceId": "td-professional-student-loc",
+      "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/credit-card-points",
+      "title": "Introduction to Credit Card Points",
       "matchedPattern": "personal"
     },
     {
@@ -6466,14 +6494,14 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (64)",
+      "title": "$100 - $200 CAD (66)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (119)",
+      "title": "$25 - $50 CAD (118)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7333,6 +7361,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM",
+      "title": "Left SM",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+SM+Cadet",
       "title": "Left SM Cadet",
       "matchedPattern": "healthcare"
@@ -7349,13 +7384,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+XL+Cadet",
       "title": "Left XL Cadet",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Left+YLG",
-      "title": "Left YLG",
       "matchedPattern": "healthcare"
     },
     {
@@ -7599,13 +7627,6 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Pursuit",
-      "title": "Pursuit",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Reflective+Details",
       "title": "Reflective Details",
       "matchedPattern": "healthcare"
@@ -7622,20 +7643,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Removable+Sockliner",
       "title": "Removable Sockliner",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+2XL",
-      "title": "Right 2XL",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+LG",
-      "title": "Right LG",
       "matchedPattern": "healthcare"
     },
     {
