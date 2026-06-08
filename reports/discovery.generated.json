@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T18:31:53.221Z",
+  "generatedAt": "2026-06-08T16:40:48.057Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -748,13 +748,6 @@
       "sourceId": "cibc-healthcare-hub",
       "url": "https://www.cibc.com/en/business/credit-cards/costco-mastercard-business.html",
       "title": "Costco Business Mastercard ®",
-      "matchedPattern": "business"
-    },
-    {
-      "provider": "CIBC",
-      "sourceId": "cibc-healthcare-hub",
-      "url": "https://www.cibc.com/en/business/advice-centre/covid-19/cra-direct-deposit.html",
-      "title": "CRA Direct Deposit for Your Business",
       "matchedPattern": "business"
     },
     {
@@ -2314,14 +2307,14 @@
     {
       "provider": "National Bank",
       "sourceId": "nbc-healthcare-professionals",
-      "url": "https://www.nbc.ca/about-us/esg/accessibility-standards.html#2.2",
+      "url": "https://www.nbc.ca/about-us/esg/accessibility-plan.html#2.2",
       "title": "Accessibility feedback process",
       "matchedPattern": "html"
     },
     {
       "provider": "National Bank",
       "sourceId": "nbc-healthcare-professionals",
-      "url": "https://www.nbc.ca/about-us/esg/accessibility-standards.html",
+      "url": "https://www.nbc.ca/about-us/esg/accessibility-plan.html",
       "title": "Accessibility plan",
       "matchedPattern": "html"
     },
@@ -2642,13 +2635,6 @@
     },
     {
       "provider": "RBC",
-      "sourceId": "rbc-physicians",
-      "url": "https://www.rbcroyalbank.com/rbcrewards/",
-      "title": "Avion Rewards",
-      "matchedPattern": "avion"
-    },
-    {
-      "provider": "RBC",
       "sourceId": "rbc-medical-dental-residents",
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/journey-guide/index.html",
       "title": "Explore Now",
@@ -2659,6 +2645,13 @@
       "sourceId": "rbc-physicians",
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage-pro.html#business",
       "title": "Explore Offers",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-students",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/medical-dental-students-b.html",
+      "title": "https://www.rbcroyalbank.com/healthcare-financial-solutions/medical-dental-students-b.html",
       "matchedPattern": "healthcare-financial-solutions"
     },
     {
@@ -2827,6 +2820,13 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/accessories/",
       "title": "Accessories",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/ai-living/",
+      "title": "AI Living",
       "matchedPattern": "samsung"
     },
     {
@@ -3023,13 +3023,6 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/home-appliances/delivery-and-installation-services/",
       "title": "Delivery & Installation",
-      "matchedPattern": "samsung"
-    },
-    {
-      "provider": "Samsung",
-      "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/ai-products/",
-      "title": "Discover AI",
       "matchedPattern": "samsung"
     },
     {
@@ -4528,13 +4521,6 @@
       "sourceId": "td-healthcare-business",
       "url": "https://www.td.com/ca/en/business-banking/small-business/starting-your-business/jonathan-and-candace-liecht-bridgeland-vet-clinic",
       "title": "Bridgeland Vet Clinic shares their story",
-      "matchedPattern": "business"
-    },
-    {
-      "provider": "TD",
-      "sourceId": "td-healthcare-business",
-      "url": "https://www.td.com/ca/en/business-banking/small-business/starting-your-business/building-an-online-storefront",
-      "title": "Building an Online Storefront with TD eCommerce Solutions",
       "matchedPattern": "business"
     },
     {
@@ -6094,13 +6080,6 @@
     {
       "provider": "TD",
       "sourceId": "td-healthcare-business",
-      "url": "https://www.td.com/ca/en/business-banking/merchant-solutions/ecommerce-website-builder",
-      "title": "TD eCommerce Solutions",
-      "matchedPattern": "business"
-    },
-    {
-      "provider": "TD",
-      "sourceId": "td-healthcare-business",
       "url": "https://www.td.com/ca/en/business-banking/how-to/manage-my-business-credit-card/card-features?#tab4",
       "title": "TD Fraud Alerts",
       "matchedPattern": "business"
@@ -6494,28 +6473,42 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (66)",
+      "title": "$100 - $200 CAD (72)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (118)",
+      "title": "$25 - $50 CAD (124)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=50.00&pmax=75.00",
-      "title": "$50 - $75 CAD (105)",
+      "title": "$50 - $75 CAD (102)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (66)",
+      "title": "$75 - $100 CAD (64)",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=1%2F2+Zip",
+      "title": "1/2 Zip",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=1%2F4+Zip",
+      "title": "1/4 Zip",
       "matchedPattern": "healthcare"
     },
     {
@@ -6523,6 +6516,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=10.5",
       "title": "10.5",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=10.5+in+or+more",
+      "title": "10.5 in or more",
       "matchedPattern": "healthcare"
     },
     {
@@ -6621,6 +6621,20 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=2XL+Tall",
       "title": "2XL Tall",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=3-in-1",
+      "title": "3-in-1",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=3.5+in+or+less",
+      "title": "3.5 in or less",
       "matchedPattern": "healthcare"
     },
     {
@@ -6815,6 +6829,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=4+to+6.5+in",
+      "title": "4 to 6.5 in",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=4-Way+Stretch",
       "title": "4-Way Stretch",
       "matchedPattern": "healthcare"
@@ -6962,6 +6983,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=7+to+10+in",
+      "title": "7 to 10 in",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/accessories/",
       "title": "Accessories",
       "matchedPattern": "healthcare"
@@ -7018,6 +7046,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Belt",
+      "title": "Belt",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/belts/",
       "title": "Belts",
       "matchedPattern": "healthcare"
@@ -7060,6 +7095,20 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Boxer",
+      "title": "Boxer",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Boxer+Jock",
+      "title": "Boxer Jock",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/boys/",
       "title": "Boys",
       "matchedPattern": "healthcare"
@@ -7074,8 +7123,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Case",
+      "title": "Case",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Chafe-Free",
       "title": "Chafe-Free",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Classic",
+      "title": "Classic",
       "matchedPattern": "healthcare"
     },
     {
@@ -7102,8 +7165,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Crew+Neck",
+      "title": "Crew Neck",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Curry+Brand",
       "title": "Curry Brand",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Curved+Brim",
+      "title": "Curved Brim",
       "matchedPattern": "healthcare"
     },
     {
@@ -7130,8 +7207,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Elbow",
+      "title": "Elbow",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/equipment/",
       "title": "Equipment",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Fanny+Pack",
+      "title": "Fanny Pack",
       "matchedPattern": "healthcare"
     },
     {
@@ -7158,8 +7249,29 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Fixed+Insulation",
+      "title": "Fixed Insulation",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Flare+Leg",
+      "title": "Flare Leg",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/football/",
       "title": "Football",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Full-Zip",
+      "title": "Full-Zip",
       "matchedPattern": "healthcare"
     },
     {
@@ -7214,8 +7326,36 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Half+Finger+Glove",
+      "title": "Half Finger Glove",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/headwear/",
       "title": "Headwear",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=High+Impact",
+      "title": "High Impact",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=High+Top",
+      "title": "High Top",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Hipster",
+      "title": "Hipster",
       "matchedPattern": "healthcare"
     },
     {
@@ -7305,8 +7445,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Insulated",
+      "title": "Insulated",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/jackets/",
       "title": "Jackets",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Jogger",
+      "title": "Jogger",
       "matchedPattern": "healthcare"
     },
     {
@@ -7445,6 +7599,34 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Low+Cut",
+      "title": "Low Cut",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Low+Impact",
+      "title": "Low Impact",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Low+Top",
+      "title": "Low Top",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Lunch+Box",
+      "title": "Lunch Box",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Matchplay",
       "title": "Matchplay",
       "matchedPattern": "healthcare"
@@ -7475,6 +7657,20 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Meridian",
       "title": "Meridian",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Mid+Impact",
+      "title": "Mid Impact",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Mid+Top",
+      "title": "Mid Top",
       "matchedPattern": "healthcare"
     },
     {
@@ -7522,6 +7718,20 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=No+Show",
+      "title": "No Show",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Non-Insulated",
+      "title": "Non-Insulated",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Nova+SlipSpeed",
       "title": "Nova SlipSpeed™",
       "matchedPattern": "healthcare"
@@ -7564,8 +7774,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Over+The+Calf",
+      "title": "Over The Calf",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/pants/",
       "title": "Pants",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Parka",
+      "title": "Parka",
       "matchedPattern": "healthcare"
     },
     {
@@ -7599,6 +7823,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Polo",
+      "title": "Polo",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/polos/",
       "title": "Polos",
       "matchedPattern": "healthcare"
@@ -7620,8 +7851,29 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Pull-Over",
+      "title": "Pull-Over",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Pull-Over+Hoodie",
+      "title": "Pull-Over Hoodie",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/purple/",
       "title": "Purple",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Quarter",
+      "title": "Quarter",
       "matchedPattern": "healthcare"
     },
     {
@@ -7643,13 +7895,6 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Removable+Sockliner",
       "title": "Removable Sockliner",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=Right+MD",
-      "title": "Right MD",
       "matchedPattern": "healthcare"
     },
     {
@@ -7711,8 +7956,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Sackpack",
+      "title": "Sackpack",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/sandals_and_slides/",
       "title": "Sandals and Slides",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Scoop+Neck",
+      "title": "Scoop Neck",
       "matchedPattern": "healthcare"
     },
     {
@@ -7741,6 +8000,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/skirts_and_skorts/",
       "title": "Skirts and Skorts",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Skull",
+      "title": "Skull",
       "matchedPattern": "healthcare"
     },
     {
@@ -7802,8 +8068,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Soft+Shell",
+      "title": "Soft Shell",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/softball/",
       "title": "Softball",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Sport+Backpack",
+      "title": "Sport Backpack",
       "matchedPattern": "healthcare"
     },
     {
@@ -7816,8 +8096,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Sport+Duffel",
+      "title": "Sport Duffel",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/sportswear/",
       "title": "Sportswear",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Straight+Leg",
+      "title": "Straight Leg",
       "matchedPattern": "healthcare"
     },
     {
@@ -7832,6 +8126,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Studio",
       "title": "Studio",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Sunglass",
+      "title": "Sunglass",
       "matchedPattern": "healthcare"
     },
     {
@@ -7858,6 +8159,13 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Tapered+Leg",
+      "title": "Tapered Leg",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Tech",
       "title": "Tech",
       "matchedPattern": "healthcare"
@@ -7865,8 +8173,29 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Thong",
+      "title": "Thong",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?srule=top-rated",
       "title": "Top Rated",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Tote",
+      "title": "Tote",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Traditional+Backpack",
+      "title": "Traditional Backpack",
       "matchedPattern": "healthcare"
     },
     {
@@ -7901,7 +8230,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=0.00&pmax=25.00",
-      "title": "Under $25 CAD (37)",
+      "title": "Under $25 CAD (31)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7935,8 +8264,22 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=V-Neck",
+      "title": "V-Neck",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=merchCollection&prefv1=Vanish",
       "title": "Vanish",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Velcro",
+      "title": "Velcro",
       "matchedPattern": "healthcare"
     },
     {
@@ -7958,6 +8301,13 @@
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/volleyball/",
       "title": "Volleyball",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Water+Bottle",
+      "title": "Water Bottle",
       "matchedPattern": "healthcare"
     },
     {
