@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T16:40:48.057Z",
+  "generatedAt": "2026-06-15T17:46:25.609Z",
   "candidates": [
     {
       "provider": "Cadillac",
@@ -2497,7 +2497,7 @@
       "provider": "National Bank",
       "sourceId": "national-bank-health-science-specialists",
       "url": "https://www.nbc.ca/personal/mortgages/offers.html",
-      "title": "Mortgage offer",
+      "title": "Mortgage offers",
       "matchedPattern": "offer"
     },
     {
@@ -2636,15 +2636,22 @@
     {
       "provider": "RBC",
       "sourceId": "rbc-medical-dental-residents",
-      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/journey-guide/index.html",
-      "title": "Explore Now",
-      "matchedPattern": "healthcare-financial-solutions"
+      "url": "https://www.rbcroyalbank.com/rbcrewards/",
+      "title": "Avion Rewards",
+      "matchedPattern": "avion"
     },
     {
       "provider": "RBC",
       "sourceId": "rbc-physicians",
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/solutions/rbc-healthcare-advantage-pro.html#business",
       "title": "Explore Offers",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/index.html?topic=healthcare-home-buying",
+      "title": "home-buying articles",
       "matchedPattern": "healthcare-financial-solutions"
     },
     {
@@ -2712,6 +2719,20 @@
     },
     {
       "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=four-questions-medical-residents-should-answer-before-buying-a-home",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
+      "sourceId": "rbc-medical-dental-residents",
+      "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=how-to-create-a-business-plan-for-your-medical-practice",
+      "title": "Read more",
+      "matchedPattern": "healthcare-financial-solutions"
+    },
+    {
+      "provider": "RBC",
       "sourceId": "rbc-healthcare-hub",
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=4-things-to-consider-when-buying-a-dental-practice-in-canada",
       "title": "Read Moreto the article about healthcare",
@@ -2723,13 +2744,6 @@
       "url": "https://www.rbcroyalbank.com/healthcare-financial-solutions/advice-learning/article/?title=should-you-incorporate-your-medical-practice-understand-your-options-2",
       "title": "Read Moreto the article about healthcare",
       "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "RBC",
-      "sourceId": "rbc-medical-dental-residents",
-      "url": "https://www.rbcroyalbank.com/healthcare/en/royal-credit-line/index.html",
-      "title": "Royal Credit Line for medical and dental residents",
-      "matchedPattern": "royal-credit-line"
     },
     {
       "provider": "RBC",
@@ -2841,6 +2855,13 @@
       "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/offer/annual-upgrade-program/",
       "title": "Annual Upgrade Program",
+      "matchedPattern": "samsung"
+    },
+    {
+      "provider": "Samsung",
+      "sourceId": "samsung-ca-offers-program",
+      "url": "https://www.samsung.com/ca/appliance-packages/all-appliance-packages/",
+      "title": "Appliance Bundles",
       "matchedPattern": "samsung"
     },
     {
@@ -3651,13 +3672,6 @@
     {
       "provider": "Samsung",
       "sourceId": "samsung-ca-offers-program",
-      "url": "https://www.samsung.com/ca/offer/samsung-week/",
-      "title": "Samsung AI Week",
-      "matchedPattern": "samsung"
-    },
-    {
-      "provider": "Samsung",
-      "sourceId": "samsung-ca-offers-program",
       "url": "https://www.samsung.com/ca/offer/samsung-care-plus/",
       "title": "Samsung Care+",
       "matchedPattern": "samsung"
@@ -4172,6 +4186,13 @@
       "url": "https://www.scotiabank.com/ca/en/about/contact-us/legal.html",
       "title": "Legal",
       "matchedPattern": "html"
+    },
+    {
+      "provider": "Scotiabank",
+      "sourceId": "scotiabank-medical-students",
+      "url": "https://www.scotiabank.com/ca/en/healthcare-plus/form.html?s1I_di_HCP_SPSP-LandingPage_1_MF_Web_BNS-26-001_0626_DOC",
+      "title": "Let a Medical Banking Specialist contact you",
+      "matchedPattern": "healthcare-plus"
     },
     {
       "provider": "Scotiabank",
@@ -6473,28 +6494,28 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=100.00&pmax=200.00",
-      "title": "$100 - $200 CAD (72)",
+      "title": "$100 - $200 CAD (68)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=25.00&pmax=50.00",
-      "title": "$25 - $50 CAD (124)",
+      "title": "$25 - $50 CAD (123)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=50.00&pmax=75.00",
-      "title": "$50 - $75 CAD (102)",
+      "title": "$50 - $75 CAD (104)",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=75.00&pmax=100.00",
-      "title": "$75 - $100 CAD (64)",
+      "title": "$75 - $100 CAD (62)",
       "matchedPattern": "healthcare"
     },
     {
@@ -7438,14 +7459,14 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Insulated",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Insulated",
       "title": "Insulated",
       "matchedPattern": "healthcare"
     },
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=subsubsilhouette&prefv1=Insulated",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=icons&prefv1=Insulated",
       "title": "Insulated",
       "matchedPattern": "healthcare"
     },
@@ -7768,7 +7789,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=200.00&pmax=9%2C999.00",
-      "title": "Over $200 CAD (12)",
+      "title": "Over $200 CAD (11)",
       "matchedPattern": "healthcare"
     },
     {
@@ -8230,7 +8251,7 @@
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?pmin=0.00&pmax=25.00",
-      "title": "Under $25 CAD (31)",
+      "title": "Under $25 CAD (32)",
       "matchedPattern": "healthcare"
     },
     {
@@ -8404,22 +8425,15 @@
     {
       "provider": "Under Armour",
       "sourceId": "under-armour-healthcare-discount",
+      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YMD+Plus",
+      "title": "YMD Plus",
+      "matchedPattern": "healthcare"
+    },
+    {
+      "provider": "Under Armour",
+      "sourceId": "under-armour-healthcare-discount",
       "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/youth_unisex/",
       "title": "Youth Unisex",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YSM+Plus",
-      "title": "YSM Plus",
-      "matchedPattern": "healthcare"
-    },
-    {
-      "provider": "Under Armour",
-      "sourceId": "under-armour-healthcare-discount",
-      "url": "https://www.underarmour.ca/en-ca/c/healthcare-discount/?prefn1=size&prefv1=YXL+Plus",
-      "title": "YXL Plus",
       "matchedPattern": "healthcare"
     }
   ]
